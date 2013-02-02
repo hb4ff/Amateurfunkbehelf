@@ -3,5 +3,35 @@
 \section{Amateur-Frequenzbänder}
 \subsection{Einteilungsempfehlung der Kurzwellenbänder}\footnote{Gemäss dem Bandplan 2011 der \link{IARU}}
 Die Pläne werden für drei Regionen erstellt; Region 1 (Europa), Region 2 (Amerika) und Region 3 (Asien). Die maximale Bandbreite sollte nicht überschritten werden.
-Automatische (unbeaufsichtigte) Stationen sind nur in den dafür vorgesehenen Frequenzbereichen erlaubt. Legende: CW  Schmalband  Alle Betriebsarten Senden nicht erlaubt
 
+Automatische (unbeaufsichtigte) Stationen sind nur in den dafür vorgesehenen Frequenzbereichen erlaubt.
+
+Legende: CW = Morse, NB = Schmalband, WB = Alle Betriebsarten, -- =  Senden nicht erlaubt
+
+{
+\setlength{\belowrulesep}{1pt}
+\setlength{\aboverulesep}{1pt}
+\newcommand{\wrap}[1]{\begin{minipage}[t]{5.5cm}#1\end{minipage}}
+\begin{longtabu} to \linewidth {p{1cm} p{1.6cm} p{1.2cm} p{.6cm} p{5cm}}
+\rowfont \bfseries Band & $f$-Bereich & Bandbr. & für & Bemerkungen \\
+\toprule
+\endhead
+\arrayrulecolor{rowsep}
+\bfseries LW & 135.7–137.8 & 200 Hz & NB & Ink. QRSS1 \\
+\midrule
+\bfseries 160 m & 1810–1838 & 200 Hz & CW & QRP auf 1836 kHz \\
+ & 1838–1840 & 500 Hz & CW \\
+ & 1838–1840 & 500 Hz & NB \\
+ & 1840–1843 & 2700 Hz & * & + Digital \\
+ & 1843–2000 & 2700 Hz \\
+\midrule
+\bfseries 80 m & 3500–3510 & 200 Hz & CW & interkontinentale QSOs bevorzugt \\
+ & 3510–3560 & 200 Hz & CW & Contest bevorzugt, QRS auf 3555 kHz \\
+ & 3560–3580 & 200 Hz & CW & QRP auf 3560 kHz \\
+ & 3580–3600 & 500 Hz & NB & 3590–3600 kHz: Unbeaufsichtigte Stationen\\
+ & 3600–3650 & 2700 Hz & NB & Telefonie-Contest bevorzugt, SSB auf 3630 kHz\\
+ & 3650–3700 & 2700 Hz & WB & 3690 kHz: QRP-Anruffrequenz\\
+ & 3700–3800 & 2700 Hz & WB & Telefonie-Contest­bereich bevorzugt. 3735 kHz: Bilder, 3760 kHz: Notruffrequenz\\
+ & 3775–3800 & 2700 Hz & WB & Priorität für interkontinentale Verbindungen
+\end{longtabu}
+}
