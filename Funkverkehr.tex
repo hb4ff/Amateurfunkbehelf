@@ -31,147 +31,153 @@ Je nach Übertragungsverfahren werden Teile weggelassen, bei Voice-Verbindungen 
 Die im Amateurfunk gebräuchlichen Abkürzungen dienen dazu, den Informationsaustausch effizienter zu gestalten. Die am häufigsten verwendeten Abkürzungen sind:
 
 {
-\begin{xtabular}{lll}
-\tablehead{
- Abkürzung & Bedeutung &  Übersetzung \\
- \toprule
-}
-ABT & about & ungefähr \\
-AGN & again & wieder, nochmals \\
-AM & amplitude modulation & Amplitudenmodulation \\
-ANI & any & irgendein \\
-ANT & antenna & Antenne \\
-B4 & before & vor, vorher \\
-BCNU & be seeing you & es würde mich freuen, dich  wieder zu treffen \\
-BK & break & Unterbrechung, unterbreche \\
-BTR & better & besser \\
-CFM & confirm & bestätige, ich bestätige \\
-CONDX & conditions & Bedingungen \\
-CONGRATS & congratulations & Glückwunsch \\
-CPI / CPY & copy & aufnehmen \\
-CQ & come quick & Allgemeiner Anruf \\
-CS & callsign & Rufzeichen \\
-CUAGN & see you again & Auf Wiederhören \\
-CUL & see you later & Bis bald \\
-CW & continuous wave & Sinuswelle, Morsetelegraphie  (Erweiterte Welle) \\
-DE & de (franz.) & von \\
-DR & dear & liebe, lieber \\
-DWN & down & unten, nach unten \\
-DX & long distance & grosse Entfernung \\
-ELE & elements & Elemente \\
-ES &  & und \\
-FB & fine business & wunderbar \\
-FER & for & für \\
-FM & from & von \\
-FM & frequency modulation & Frequenzmodulation \\
-FR & for & für \\
-FRD & friend & Freund \\
-FRM & from & von \\
-GA & good afternoon & Guten Tag (Nachmittag) \\
-GB & goodbye & Auf Wiederhören \\
-GD & good day & Guten Tag \\
-GE & good evening & Guten Abend \\
-GL & good luck & Viel Glück \\
-GM & good morning & Guten Morgen \\
-GN & good night & Gute Nacht \\
-GND & ground & Masse, Erdung \\
-GP &  & Groundplane-Antenne \\
-GUD & good & gut \\
-HAM & ham & Funkamateur \\
-HF & high frequency & Kurzwelle, Hochfrequenz \\
-HI &  & Ich lache \\
-HPE & hope & Ich hoffe \\
-HR & here & hier \\
-HRD & heard & hörte , gehört \\
-HV & have & haben, Ich habe \\
-HW & how & wie \\
-K &  & kommen \\
-KEY, KY & key & Morsetaste \\
-LBR &  & Lieber \\
-LID &  & Schlechter Funker \\
-LIS & licensed & lizenziert \\
-LP & long path & Langer Weg \\
-LSB & lower side band & Unteres Seitenband \\
-LSN & listen & hören, höre \\
-LW & long wire & Langer Draht \\
-MGR & manager & Manager \\
-MIC, MIKE & microphone & Mikrofon \\
-MIN & minute & Minute \\
-MNI & many & viel \\
-MRI & merry & fröhlich \\
-MSG & message & Nachricht \\
-MTR & meter & Meter, Messgerät \\
-NIL & not in log & Nicht im Log \\
-NIL &  & Nichts \\
-NITE & night & Nacht \\
-NR & near & nahe, In der Nähe von \\
-NR & number & Nummer \\
-NW & now & jetzt \\
-OB & old boy & Alter Junge \\
-OM & old man & Funkamateur \\
-OP & operator & Funker \\
-OT & old timer & Langjähriger Funker \\
-PEP & peak envelope power & \parbox[t]{4cm}{Spitzenleistung (z. B. Input PEP = 200 W, Output PEP = 100 W)} \\
-PFX & prefix & Präfix \\
-PSE & please & bitte \\
-PSED & pleased & erfreut \\
-PWR & power & Leistung \\
-R & roger & verstanden \\
-RCD, RCVD & received & erhalten, bekommen \\
-RIG &  & Stationsausrüstung \\
-RPRT & report & Rapport \\
-RPT & repeat & wiederhole, ich wiederhole \\
-RST & readability, strength, tone & Lesbarkeit, Signalstärke, Tonqualität \\
-RX & receiver & Empfänger \\
-SKED & schedule & Verabredung \\
-SN & soon & bald \\
-SP & short path & Kurzer Weg \\
-SRI & sorry & Entschuldigung \\
-SUM & some & etwas \\
-SWL & short wave listener & Höramateur \\
-SWR & standing wave ratio & Stehwellenverhältnis \\
-TEMP & temperature & Temperatur \\
-TKS, TNX & thanks & Danke \\
-TRX & transceiver & Sendeempfänger \\
-TU & thank you & Danke \\
-TX & transmitter & Sender \\
-U & you & Sie, du \\
-UFB & ultra fine business & ganz ausgezeichnet \\
-UNLIS & unlicensed & Nicht lizenziert, Schwarzfunker \\
-UP & up & oben, nach oben \\
-UR & your & dein \\
-URS & yours & Grüsse \\
-USB & upper side band & Oberes Seitenband \\
-UTC & universal time coordinated & Weltzeit \\
-VIA & via & über, via \\
-VY & very & sehr \\
-WID & with & mit \\
-WKD & worked & arbeitete, gearbeitet \\
-WX & weather & Wetter \\
-XCUS & excuse & entschuldige \\
-XMAS & Christmas & Weihnachten \\
-XPECT & expect & erwarten \\
-XYL & ex-young lady & Ehefrau \\
-YDAY & yesterday & gestern \\
-YL & young lady & Funkamateurin \\
-2 & to & zu, nach \\
-4 & for & für \\
-33 &  & Viele Grüsse (zwischen (X)YL) \\
-55 &  & Viel Erfolg \\
-72 &  & Viele Grüsse (zwischen QRP-Stationen) \\
-73 &  & Viele Grüsse \\
-88 & love and kisses & Liebe und Küsse (zwischen OM und YL) \\
+\begin{longtabu} to \linewidth{lll}
+\rowfont \bfseries Abkürzung & Bedeutung &  Übersetzung \\
+\toprule
+\endhead
+\arrayrulecolor{rowsep}
+ABT & about & ungefähr \\ \midrule
+AGN & again & wieder, nochmals \\ \midrule
+AM & amplitude modulation & Amplitudenmodulation \\ \midrule
+ANI & any & irgendein \\ \midrule
+ANT & antenna & Antenne \\ \midrule
+B4 & before & vor, vorher \\ \midrule
+BCNU & be seeing you & es würde mich freuen, dich  wieder zu treffen \\ \midrule
+BK & break & Unterbrechung, unterbreche \\ \midrule
+BTR & better & besser \\ \midrule
+CFM & confirm & bestätige, ich bestätige \\ \midrule
+CONDX & conditions & Bedingungen \\ \midrule
+CONGRATS & congratulations & Glückwunsch \\ \midrule
+CPI / CPY & copy & aufnehmen \\ \midrule
+CQ & come quick & Allgemeiner Anruf \\ \midrule
+CS & callsign & Rufzeichen \\ \midrule
+CUAGN & see you again & Auf Wiederhören \\ \midrule
+CUL & see you later & Bis bald \\ \midrule
+CW & continuous wave & Sinuswelle, Morsetelegraphie \\ \midrule
+DE & de (franz.) & von \\ \midrule
+DR & dear & liebe, lieber \\ \midrule
+DWN & down & unten, nach unten \\ \midrule
+DX & long distance & grosse Entfernung \\ \midrule
+ELE & elements & Elemente \\ \midrule
+ES &  & und \\ \midrule
+FB & fine business & wunderbar \\ \midrule
+FER & for & für \\ \midrule
+FM & from & von \\ \midrule
+FM & frequency modulation & Frequenzmodulation \\ \midrule
+FR & for & für \\ \midrule
+FRD & friend & Freund \\ \midrule
+FRM & from & von \\ \midrule
+GA & good afternoon & Guten Tag (Nachmittag) \\ \midrule
+GB & goodbye & Auf Wiederhören \\ \midrule
+GD & good day & Guten Tag \\ \midrule
+GE & good evening & Guten Abend \\ \midrule
+GL & good luck & Viel Glück \\ \midrule
+GM & good morning & Guten Morgen \\ \midrule
+GN & good night & Gute Nacht \\ \midrule
+GND & ground & Masse, Erdung \\ \midrule
+GP &  & Groundplane-Antenne \\ \midrule
+GUD & good & gut \\ \midrule
+HAM & ham & Funkamateur \\ \midrule
+HF & high frequency & Kurzwelle, Hochfrequenz \\ \midrule
+HI &  & Ich lache \\ \midrule
+HPE & hope & Ich hoffe \\ \midrule
+HR & here & hier \\ \midrule
+HRD & heard & hörte, gehört \\ \midrule
+HV & have & haben, Ich habe \\ \midrule
+HW & how & wie \\ \midrule
+K &  & kommen \\ \midrule
+KEY, KY & key & Morsetaste \\ \midrule
+LBR &  & Lieber \\ \midrule
+LID &  & Schlechter Funker \\ \midrule
+LIS & licensed & lizenziert \\ \midrule
+LP & long path & Langer Weg \\ \midrule
+LSB & lower side band & Unteres Seitenband \\ \midrule
+LSN & listen & hören, höre \\ \midrule
+LW & long wire & Langer Draht \\ \midrule
+MGR & manager & Manager \\ \midrule
+MIC, MIKE & microphone & Mikrofon \\ \midrule
+MIN & minute & Minute \\ \midrule
+MNI & many & viel \\ \midrule
+MRI & merry & fröhlich \\ \midrule
+MSG & message & Nachricht \\ \midrule
+MTR & meter & Meter, Messgerät \\ \midrule
+NIL & not in log & Nicht im Log \\ \midrule
+NIL &  & Nichts \\ \midrule
+NITE & night & Nacht \\ \midrule
+NR & near & nahe, In der Nähe von \\ \midrule
+NR & number & Nummer \\ \midrule
+NW & now & jetzt \\ \midrule
+OB & old boy & Alter Junge \\ \midrule
+OM & old man & Funkamateur \\ \midrule
+OP & operator & Funker \\ \midrule
+OT & old timer & Langjähriger Funker \\ \midrule
+PEP & peak envelope power & \parbox[t]{4cm}{Spitzenleistung (z. B. Input PEP = 200 W, Output PEP = 100 W)} \\ \midrule
+PFX & prefix & Präfix \\ \midrule
+PSE & please & bitte \\ \midrule
+PSED & pleased & erfreut \\ \midrule
+PWR & power & Leistung \\ \midrule
+R & roger & verstanden \\ \midrule
+RCD, RCVD & received & erhalten, bekommen \\ \midrule
+RIG &  & Stationsausrüstung \\ \midrule
+RPRT & report & Rapport \\ \midrule
+RPT & repeat & wiederhole, ich wiederhole \\ \midrule
+RST & readability, strength, tone & Lesbarkeit, Signalstärke, Tonqualität \\ \midrule
+RX & receiver & Empfänger \\ \midrule
+SKED & schedule & Verabredung \\ \midrule
+SN & soon & bald \\ \midrule
+SP & short path & Kurzer Weg \\ \midrule
+SRI & sorry & Entschuldigung \\ \midrule
+SUM & some & etwas \\ \midrule
+SWL & short wave listener & Höramateur \\ \midrule
+SWR & standing wave ratio & Stehwellenverhältnis \\ \midrule
+TEMP & temperature & Temperatur \\ \midrule
+TKS, TNX & thanks & Danke \\ \midrule
+TRX & transceiver & Sendeempfänger \\ \midrule
+TU & thank you & Danke \\ \midrule
+TX & transmitter & Sender \\ \midrule
+U & you & Sie, du \\ \midrule
+UFB & ultra fine business & ganz ausgezeichnet \\ \midrule
+UNLIS & unlicensed & Nicht lizenziert, Schwarzfunker \\ \midrule
+UP & up & oben, nach oben \\ \midrule
+UR & your & dein \\ \midrule
+URS & yours & Grüsse \\ \midrule
+USB & upper side band & Oberes Seitenband \\ \midrule
+UTC & universal time coordinated & Weltzeit \\ \midrule
+VIA & via & über, via \\ \midrule
+VY & very & sehr \\ \midrule
+WID & with & mit \\ \midrule
+WKD & worked & arbeitete, gearbeitet \\ \midrule
+WX & weather & Wetter \\ \midrule
+XCUS & excuse & entschuldige \\ \midrule
+XMAS & Christmas & Weihnachten \\ \midrule
+XPECT & expect & erwarten \\ \midrule
+XYL & ex-young lady & Ehefrau \\ \midrule
+YDAY & yesterday & gestern \\ \midrule
+YL & young lady & Funkamateurin \\ \midrule
+2 & to & zu, nach \\ \midrule
+4 & for & für \\ \midrule
+33 &  & Viele Grüsse (zwischen (X)YL) \\ \midrule
+55 &  & Viel Erfolg \\ \midrule
+72 &  & Viele Grüsse (zwischen QRP-Stationen) \\ \midrule
+73 &  & Viele Grüsse \\ \midrule
+88 & love and kisses & Liebe und Küsse (zwischen OM und YL) \\ \midrule
 99 & keep out & Verschwinde
-\end{xtabular}
+\end{longtabu}
 }
 
 \subsection{Zahlen}
 «Lange» Zahlen wie 0 und 9 werden oft abgekürzt, wenn klar ist, dass das Zeichen eine Zahl ist (etwa beim Report ist RST immer eine dreistellige Nummer). Abkürzungen für die restlichen Zahlen sind nur sehr selten anzutreffen.
 
+\vspace{1em}
+{
 \begin{tabular}{cccccccccc}
+\arrayrulecolor{rowsep}
 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 \\
+\midrule
 a & u & v & 4 & e & 6 & b & d & n & t
 \end{tabular}
+}
+\vspace{1em}
 
 Beispiele: rst 599 5nn, pwr 1tt w
 
@@ -189,45 +195,47 @@ Die Q-Codes werden zu Fragen, wenn ihnen ein Fragezeichen folgt. Die nachfolgend
 Jenen Q-Codes, die mehrere numerierte Bedeutungen haben, ist die entsprechende Nummer unmittelbar nachgestellt. \textit{(qsa1, qrk3)}
 
 {
-\newcommand{\wrap}[1]{\begin{minipage}[t]{4cm}#1\end{minipage}}
-\begin{xtabular}{p{1cm}p{4cm}p{6cm}}
-\tablehead{
- Abk. & Frage & Antwort \\
- \toprule
-}
-QRA & Wie ist der Name Ihrer Radiostation? & Der Name meiner Radiostation ist \dots \\
-QRB & In welcher Entfernung von meiner Station befinden Sie sich ungefähr? & Die Entfernung zwischen unseren Stationen beträgt ungefähr ... Seemeilen (oder Kilometer) \\
-QRG & Wollen Sie mir meine genaue Frequenz (oder die genaue Frequenz von ...) mitteilen? & Ihre genaue Frequenz (oder die genaue Frequenz von ...) ist ... kHz (oder MHz) \\
-QRH & Schwankt meine Frequenz? & Ihre Frequenz schwankt \\
-QRI & Wie ist der Ton meiner Aussendung? & Der Ton Ihrer Aussendung ist 1: gut 2: veränderlich 3: schlecht \\
-QRK & Wie ist die Verständlichkeit meiner Zeichen (oder der Zeichen von ...)? & \wrap{Die Verständlichkeit Ihrer Zeichen (oder der Zeichen von ...) ist\\ 1: schlecht\\ 2: mangelhaft\\ 3: ausreichend\\ 4: gut\\ 5: ausgezeichnet} \\
-QRL & Sind Sie beschäftigt? & Ich bin beschäftigt (oder: ich bin mit ... beschäftigt). Bitte nicht stören. \\
-QRM & Werden Sie gestört? & \wrap{Ich werde gestört. oder:\\ Ich werde\\ 1: gar nicht\\ 2: schwach\\ 3: mässig\\ 4: stark\\ 5: sehr stark\\ gestört} \\
-QRN & Werden Sie durch atmosphärische Störungen beeinträchtigt? & \wrap{Ich werde durch atmosphärische Störungen beeinträchtigt. oder:\\ Ich werde\\ 1: gar nicht \\ 2: schwach\\ 3: mässig\\ 4: stark\\ 5: sehr stark\\ durch atmosphärische Störungen beeinträchtigt.} \\
-QRO & Soll ich die Sendeleistung erhöhen? & Erhöhen Sie die Sendeleistung. \\
-QRP & Soll ich die Sendeleistung vermindern? & Vermindern Sie die Sendeleistung. \\
-QRQ & Soll ich schneller geben? & Geben Sie schneller (... Wörter in der Minute) \\
-QRS & Soll ich langsamer geben? & Geben Sie langsamer (... Wörter in der Minute) \\
-QRT & Soll ich die Übermittlung einstellen? & Stellen Sie die Übermittlung ein. \\
-QRU & Haben Sie etwas für mich? & Ich habe nichts für Sie. \\
-QRV & Sind Sie bereit? & Ich bin bereit. \\
-QRX & Wann werden Sie mich wieder rufen? & Ich werde Sie um ... Uhr (auf ... kHz [oder MHz]) wieder rufen \\
-QRZ & Von wem werde ich gerufen? & Sie werden von ... (auf ... kHz [oder MHz]) gerufen. \\
-QSA & Wie ist die Stärke meiner Zeichen (oder der Zeichen von ...)? & \wrap{Die Stärke Ihrer Zeichen (oder der Zeichen von ...) ist \\ 1: kaum hörbar \\ 2: schwach\\ 3: ziemlich gut\\ 4: gut\\ 5: sehr gut} \\
-QSB & Schwankt die Stärke meiner Zeichen? & Die Stärke Ihrer Zeichen schwankt. \\
-QSD & Ist mein Tasterspiel mangelhaft? & Ihr Tasterspiel ist mangelhaft. \\
-QSP & Werden Sie an ... vermitteln? & Ich werde an ... vermitteln. \\
-QSL & Können Sie mir Empfangsbestätigung geben? & Ich gebe Ihnen Empfangsbestätigung \\
-QSO & Können Sie mit ... unmittelbar (oder durch Vermittlung) verkehren? & Ich kann mit ... unmittelbar (oder durch Vermittlung von) verkehren. \\
-QST & Inoffiziell. Benutzt durch die ARRL\\ (American Radio Relay League) & Allgemeiner Aufruf, der einer Nachricht an alle Radioamateure und ARRL-Mitglieder vorausgeht. \\
-QSV & Soll ich eine Reihe V auf dieser Frequenz senden? & Senden Sie eine Reihe V auf dieser Frequenz (oder auf ... kHz [oder MHz]) \\
-QSX & Werden Sie Rufzeichen auf der Fre­quenz ... hören? & Ich höre Rufzeichen auf der Fre­quenz ... \\
-QSY & Soll ich zum Senden auf eine andere Frequenz übergehen? & Gehen Sie auf eine andere Frequenz über (oder auf ... kHz [oder MHz]). \\
-QSZ & Soll ich jedes Wort oder jede Gruppe mehrmals geben? & Geben Sie jedes Wort oder jede Gruppe zweimal (oder ... mal). \\
-QTC & Wie viele Telegramme haben Sie? & Ich habe ... Telegramme für Sie (oder \\ für ...) \\
-QTH & Wie ist Ihr Standort nach Breite und Länge (oder nach jeder anderen Angabe)? & Mein Standort ist ... Breite, ... Länge (oder nach jeder anderen Angabe). \\
-QTR & Welches ist die genaue Uhrzeit? & Es ist genau ... Uhr \\
-\end{xtabular}
+\setlength{\belowrulesep}{1pt}
+\setlength{\aboverulesep}{1pt}
+\newcommand{\wrap}[1]{\begin{minipage}[t]{5.5cm}#1\end{minipage}}
+\begin{longtabu} to \linewidth {p{.6cm}p{4cm}p{5.5cm}}
+\rowfont \bfseries Abk. & Frage & Antwort \\
+\toprule
+\endhead
+\arrayrulecolor{rowsep}
+QRA & Wie ist der Name Ihrer Radiostation? & Der Name meiner Radiostation ist … \\  \midrule
+QRB & In welcher Entfernung von meiner Station befinden Sie sich ungefähr? & Die Entfernung zwischen unseren Stationen beträgt ungefähr … Seemeilen (oder Kilometer) \\ \midrule
+QRG & Wollen Sie mir meine genaue Frequenz (oder die genaue Frequenz von …) mitteilen? & Ihre genaue Frequenz (oder die genaue Frequenz von …) ist … kHz (oder MHz) \\ \midrule
+QRH & Schwankt meine Frequenz? & Ihre Frequenz schwankt \\ \midrule
+QRI & Wie ist der Ton meiner Aussendung? & Der Ton Ihrer Aussendung ist 1: gut 2: veränderlich 3: schlecht \\ \midrule
+QRK & Wie ist die Verständlichkeit meiner Zeichen (oder der Zeichen von …)? & \wrap{Die Verständlichkeit Ihrer Zeichen (oder der Zeichen von …) ist\\ 1: schlecht\\ 2: mangelhaft\\ 3: ausreichend\\ 4: gut\\ 5: ausgezeichnet} \\ \midrule
+QRL & Sind Sie beschäftigt? & Ich bin beschäftigt (oder: ich bin mit … beschäftigt). Bitte nicht stören. \\ \midrule
+QRM & Werden Sie gestört? & \wrap{Ich werde gestört. oder:\\ Ich werde\\ 1: gar nicht\\ 2: schwach\\ 3: mässig\\ 4: stark\\ 5: sehr stark\\ gestört} \\ \midrule
+QRN & Werden Sie durch atmosphärische Störungen beeinträchtigt? & \wrap{Ich werde durch atmosphärische Störungen beeinträchtigt. oder:\\ Ich werde\\ 1: gar nicht \\ 2: schwach\\ 3: mässig\\ 4: stark\\ 5: sehr stark\\ durch atmosphärische Störungen beeinträchtigt.} \\ \midrule
+QRO & Soll ich die Sendeleistung erhöhen? & Erhöhen Sie die Sendeleistung. \\ \midrule
+QRP & Soll ich die Sendeleistung vermindern? & Vermindern Sie die Sendeleistung. \\ \midrule
+QRQ & Soll ich schneller geben? & Geben Sie schneller (… Wörter in der Minute) \\ \midrule
+QRS & Soll ich langsamer geben? & Geben Sie langsamer (… Wörter in der Minute) \\ \midrule
+QRT & Soll ich die Übermittlung einstellen? & Stellen Sie die Übermittlung ein. \\ \midrule
+QRU & Haben Sie etwas für mich? & Ich habe nichts für Sie. \\ \midrule
+QRV & Sind Sie bereit? & Ich bin bereit. \\ \midrule
+QRX & Wann werden Sie mich wieder rufen? & Ich werde Sie um … Uhr (auf … kHz [oder MHz]) wieder rufen \\ \midrule
+QRZ & Von wem werde ich gerufen? & Sie werden von … (auf … kHz [oder MHz]) gerufen. \\ \midrule
+QSA & Wie ist die Stärke meiner Zeichen (oder der Zeichen von …)? & \wrap{Die Stärke Ihrer Zeichen (oder der Zeichen von …) ist \\ 1: kaum hörbar \\ 2: schwach\\ 3: ziemlich gut\\ 4: gut\\ 5: sehr gut} \\ \midrule
+QSB & Schwankt die Stärke meiner Zeichen? & Die Stärke Ihrer Zeichen schwankt. \\ \midrule
+QSD & Ist mein Tasterspiel mangelhaft? & Ihr Tasterspiel ist mangelhaft. \\ \midrule
+QSP & Werden Sie an … vermitteln? & Ich werde an … vermitteln. \\ \midrule
+QSL & Können Sie mir Empfangsbestätigung geben? & Ich gebe Ihnen Empfangsbestätigung \\ \midrule
+QSO & Können Sie mit … unmittelbar (oder durch Vermittlung) verkehren? & Ich kann mit … unmittelbar (oder durch Vermittlung von) verkehren. \\ \midrule
+QST & Inoffiziell. Benutzt durch die ARRL (American Radio Relay League) & Allgemeiner Aufruf, der einer Nachricht an alle Radioamateure und ARRL-Mitglieder vorausgeht. \\ \midrule
+QSV & Soll ich eine Reihe V auf dieser Frequenz senden? & Senden Sie eine Reihe V auf dieser Frequenz (oder auf … kHz [oder MHz]) \\ \midrule
+QSX & Werden Sie Rufzeichen auf der Fre­quenz … hören? & Ich höre Rufzeichen auf der Fre­quenz … \\ \midrule
+QSY & Soll ich zum Senden auf eine andere Frequenz übergehen? & Gehen Sie auf eine andere Frequenz über (oder auf … kHz [oder MHz]). \\ \midrule
+QSZ & Soll ich jedes Wort oder jede Gruppe mehrmals geben? & Geben Sie jedes Wort oder jede Gruppe zweimal (oder … mal). \\ \midrule
+QTC & Wie viele Telegramme haben Sie? & Ich habe … Telegramme für Sie (oder für …) \\ \midrule
+QTH & Wie ist Ihr Standort nach Breite und Länge (oder nach jeder anderen Angabe)? & Mein Standort ist … Breite, … Länge (oder nach jeder anderen Angabe). \\ \midrule
+QTR & Welches ist die genaue Uhrzeit? & Es ist genau … Uhr 
+\end{longtabu}
 }
 
 \section{QSOs}
@@ -237,102 +245,139 @@ Grundsätzlich gibt es drei Möglichkeiten, ein QSO mit anderen Funkamateuren zu
  \item Antwort auf CQ-Ruf einer anderen Station
  \item Bitte um Aufnahme in ein laufendes QSO
 \end{itemize}
-In QSOs werden wichtige Informationen wie Rufzeichen, Name, qth oder RST bevorzugt mehrmals – in CW je nachdem auch langsamer – gegeben, damit sie besser aufgenommen werden können.
+In QSOs werden wichtige Informationen wie Rufzeichen, Name, qth oder RST bevorzugt mehrmals – in CW je nachdem auch langsamer – gegeben, damit sie mit grösserer Sicherheit korrekt aufgenommen werden können.
 
 Beim Mitschreiben empfiehlt es sich, wichtige Informationen wie Rufzeichen, Name und qth zu unterstreichen, damit man beim Antworten nicht lange danach suchen muss.
 
 Um unsere Zeit in UTC umzurechnen, zieht man während der Winterzeit eine, während der Sommerzeit zwei Stunden ab.
 
-Wichtig: Die folgenden Muster-QSOs sind nicht eigentlich Muster! Ein QSO zwischen Funk­amateuren läuft abgesehen von diesem Grundriss mehr oder weniger nach Lust und Laune ab.
+\textbf{Wichtig:} Die folgenden Muster-QSOs sind nicht eigentlich Muster! Ein QSO zwischen Funk­amateuren läuft abgesehen von diesem Grundriss mehr oder weniger nach Lust und Laune ab.
 
+
+
+{
+\newcommand{\B}[1]{ \hspace*{.4\textwidth }\begin{minipage}{.55\textwidth }#1\end{minipage} }
+\newcommand{\T}[1]{\vspace*{1em}
+
+\noindent
+\textbf{#1}\\}
+\newcommand{\EN}[1]{\textit{#1}}
+\definecolor{cgap}{cmyk}{.2,0,0,.4}
+\newcommand{\gap}[1]{\textcolor{cgap}{\textit{#1}}}
+
+\newpage
 \subsection{Muster-QSO in CW}
-Frequenzsuche und Anfrage, ob diese besetzt ist:
+
+\textbf{Frequenzsuche und Anfrage, ob diese besetzt ist:}\\
 qrl?  (Am besten zweimal fragen)
-CQ-Ruf
-cq cq cq de HB4FF HB4FF HB4FF pse k
-HB4FF de HB9DVT HB9DVT  pse k
-1. Durchgang (Begrüssung, Signalrapport, Vorstellung)
-HB9DVT de HB4FF =
-gm dr om es mni tnx fer call =
-ur rst is 579 579 = 
-my name is martin martin es my qth is nr thun thun =
-hw cpi? HB9DVT de HB4FF k
-HB4FF de HB9DVT =
-r cpi all =
-tu fer fb rprt es info =
-rst is 559 559 =
-name is thomas thomas qth is nr aarau nr aarau =
+
+\T{CQ-Ruf}
+cq cq cq de \gap{HB4FF HB4FF HB4FF} pse k\\
+\B{HB4FF de HB9DVT HB9DVT  pse k}
+
+\T{1. Durchgang (Begrüssung, Signalrapport, Vorstellung)}
+\gap{HB9DVT de HB4FF} =\\
+gm dr om es mni tnx fer call =\\
+ur rst is \gap{579 579} = \\
+my name is \gap{martin martin} es my qth is nr \gap{thun thun} =\\
+hw cpi? \gap{HB9DVT de HB4FF} k\\
+\B{
+HB4FF de HB9DVT =\\
+r cpi all =\\
+tu fer fb rprt es info =\\
+rst is 559 559 =\\
+name is thomas thomas qth is nr aarau nr aarau =\\
 hw? HB4FF de HB9DVT k
-2. Durchgang (Stationseinrichtung, Wetter, Sonstiges)
-HB9DVT de HB4FF =
-r vy gud cpi dr thomas =
-mni tnx =
-my rig is ft-1000mp pwr abt 100 w =
-ant is dipole =
-wx is overcast wid temp 16 c =
-hw? HB9DVT de HB4FF k
-r dr martin es mni tks fer info =
-rig hr is ft-890 pwr is 100 w es ant is r5 vertical =
-wx is sunny es temp abt 19 c =
+}
+
+\T{2. Durchgang (Stationseinrichtung, Wetter, Sonstiges)}
+\gap{HB9DVT} de \gap{HB4FF} =\\
+r vy gud cpi dr \gap{thomas} =\\
+mni tnx =\\
+my rig is \gap{ft-1000mp} pwr abt \gap{100 w} =\\
+ant is \gap{dipole} =\\
+wx is \gap{overcast} wid temp \gap{16 c} =\\
+hw? \gap{HB9DVT de HB4FF} k\\
+\B{
+r dr martin es mni tks fer info =\\
+rig hr is ft-890 pwr is 100 w es ant is r5 vertical =\\
+wx is sunny es temp abt 19 c =\\
 nw dr martin qru? HB9DVT de HB4FF k
-3. Durchgang (Bedankung, Verabschiedung)
-HB9DVT de HB4FF =
-ok dr thomas mni tnx fer ufb qso =
-hpe cuagn sn es my qsl sure via buro =
-best 73 es gb = HB9DVT de HB4FF +
-HB4FF de HB9DVT =
-tu fer nice qso dr martin =
-my qsl also ok via buro =
-gud dx es best wishes =
-vy 73 cu HB4FF de HB9DVT sk
+}
+
+\T{3. Durchgang (Bedankung, Verabschiedung)}
+\gap{HB9DVT de HB4FF} =\\
+ok dr \gap{thomas} mni tnx fer ufb qso =\\
+hpe cuagn sn es my qsl sure via buro =\\
+best 73 es gb = \gap{HB9DVT de HB4FF} +\\
+\B{HB4FF de HB9DVT =\\
+tu fer nice qso dr martin =\\
+my qsl also ok via buro =\\
+gud dx es best wishes =\\
+vy 73 cu HB4FF de HB9DVT ++\footnote{+ (ar) und ++ (sk) werden bei Verbindungsende in dieser Reihenfolge gegeben. Zwischen den Buchstaben \textit{a} und \textit{r} bzw. \textit{s} und \textit{k} ist -- wie beim SOS -- keine Pause.}
+}
 
 
+\newpage
 \subsection{Muster-QSO Phonie}
-Frequenzsuche und Anfrage, ob diese besetzt ist:
-Ist diese Frequenz belegt?
+\T{Frequenzsuche und Anfrage, ob diese besetzt ist:}
+Ist diese Frequenz belegt?\\
 Is this frequency in use?  (Am besten zweimal fragen)
-CQ-Ruf
-CQ CQ CQ allgemeiner Anruf von HB4FF Hotel Bravo Vier Foxtrott Foxtrott HB4FF
-CQ CQ CQ this is  HB4FF Hotel Bravo Four Foxtrott Foxtrott HB4FF
-1. Durchgang (Begrüssung, Signalrapport, Vorstellung)
-HB9DVT von HB4FF = Guten Tag lieber OM und vielen Dank für den Anruf. 
-Ihr Rapport ist 5 und 9, ein ganz gutes Signal. Mein Name ist ....  und der Standort ist ... 
-Zurück zu Ihnen = HB9DVT von HB4FF bitte kommen
-HB9DVT this is HB4FF = Very good Morning dear OM and many thanks for the call. 
-Your signal is 5 and 9, fine modulation. My name is … and the qth is …
-Back to you = HB9DVT this is HB4FF over
-2. Durchgang (Stationseinrichtung, Wetter, Sonstiges)
-HB9DVT von HB4FF = Vielen Dank für die Informationen lieber … (sein Name). Mein Sender ist ein Yaesu FT-1000MP mit etwa 100 W Leistung. Die Antenne ist ein Breitbanddipol. 
-Das Wetter ist … (sonnig, bewölkt, Regen). Die Temperatur etwa … Grad. Wie ist das angekommen? HB9DVT DE HB4FF bitte kommen
-HB9DVT this is HB4FF = many thanks for the information dear … (his name).My transceiver is a Yaesu FT-1000MP, the power is 100 Watt. The antenna is a broadband dipol. The weather is ... (sunny, cloudy, rain). Temperature is abt … degrades celsius. How do you copy? HB9DVT this is HB4FF over
-3. Durchgang (Bedankung, Verabschiedung)
-HB9DVT von HB4FF = alles klar lieber ... (sein Name). Vielen Dank für die Verbindung. 
-Ich hoffe, wir treffen uns wieder einmal auf der Frequenz. Meine QSL Karte wird via Büro versendet. 
-Alles Gute und bis zum nächsten Mal. Es verabschiedet sich HB4FF Operator ... (mein Vorname).
-HB9DVT this is HB4FF = all o.k. dear … (sein Name). Many thanks for the qso. 
-I hope to meet you again on the frequency. QSL Card is o.k. via Buro.
-All the best and hope to meet you again on the frequency. 
-Beste 73, tschüss.
-73 and good luck. Bye bye 
 
+\T{CQ-Ruf}
+CQ CQ CQ allgemeiner Anruf von HB4FF Hotel Bravo Vier Foxtrott Foxtrott HB4FF\\
+\EN{CQ CQ CQ this is  HB4FF Hotel Bravo Four Foxtrott Foxtrott HB4FF}
+
+\T{1. Durchgang (Begrüssung, Signalrapport, Vorstellung)}
+HB9DVT von HB4FF = Guten Tag lieber OM und vielen Dank für den Anruf.\\
+Ihr Rapport ist 5 und 9, ein ganz gutes Signal. Mein Name ist ….  und der Standort ist … \\
+Zurück zu Ihnen = HB9DVT von HB4FF bitte kommen\\
+\EN{HB9DVT this is HB4FF = Very good Morning dear OM and many thanks for the call. \\
+Your signal is 5 and 9, fine modulation. My name is … and the qth is …\\
+Back to you = HB9DVT this is HB4FF over}
+
+\T{2. Durchgang (Stationseinrichtung, Wetter, Sonstiges)}
+HB9DVT von HB4FF = Vielen Dank für die Informationen lieber … (sein Name). Mein Sender ist ein Yaesu FT-1000MP mit etwa 100 W Leistung. Die Antenne ist ein Breitbanddipol.
+Das Wetter ist … (sonnig, bewölkt, Regen). Die Temperatur etwa … Grad. Wie ist das angekommen? HB9DVT von HB4FF bitte kommen\\
+\EN{HB9DVT this is HB4FF = many thanks for the information dear … (his name). My transceiver is a Yaesu FT-1000MP, the power is 100 Watt. The antenna is a broadband dipol. The weather is … (sunny, cloudy, rain). Temperature is abt … degrades celsius. How do you copy? HB9DVT this is HB4FF over}
+
+\T{3. Durchgang (Bedankung, Verabschiedung)}
+HB9DVT von HB4FF = alles klar lieber … (sein Name). Vielen Dank für die Verbindung. 
+Ich hoffe, wir treffen uns wieder einmal auf der Frequenz. Meine QSL Karte wird via Büro versendet. 
+Alles Gute und bis zum nächsten Mal. Es verabschiedet sich HB4FF Operator … (mein Vorname).\\
+\EN{HB9DVT this is HB4FF = all o.k. dear … (sein Name). Many thanks for the qso. 
+I hope to meet you again on the frequency. QSL Card is o.k. via Buro.
+All the best and hope to meet you again.}\\
+Beste 73, tschüss.\\
+\EN{73 and good luck. Bye bye}
+
+}
+
+\newpage
 \section{Übertragungsverfahren}
 Die im Amateurfunk gebräuchlichsten Übertragungsverfahren sind:
 
+\vspace{1em}
 \begin{tabular}{llc}
-Betriebsart & Abkürzung & Bezeichnung \\
-Morsetelegraphie & CW (Continuous wave) & A1A \\
- &  &  \\
-Telephonie &  &  \\
+\bfseries Betriebsart & Abkürzung & Bezeichnung \\
+\toprule
+
+\bfseries Morsetelegraphie & CW (Continuous wave) & A1A \\ \\
+
+\bfseries Telefonie &  &  \\
+\midrule
 Amplitudenmodulation & AM & A3E \\
 Einseitenbandmodulation & SSB (LSB/USB) & J3E \\
-Frequenzmodulation & FM & F3E \\
- &  &  \\
-Digitale Übertragungsverfahren &  &  \\
+Frequenzmodulation & FM & F3E \\ \\
+
+\bfseries Digitale Übertragungsverfahren &  &  \\
+\midrule
 Funkfernschreiben & RTTY (Radio teletype) & F1B, J2B \\
 Faksimile & FAX & F1C, J3C \\
 Packet Radio & PR & F1B \\
 Standbildfernsehen & SSTV (Slow scan TV) & J2C \\
 Amateurfernsehen & ATV (Amateur TV) & C3F
 \end{tabular}
+\vspace{1em}
 
 Die Erklärung zu diesen und weiteren Bezeichnungen findet man in den Bakom-Vorschriften unter RR AP 1: Abschnitt II, Sendearten.
