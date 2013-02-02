@@ -1,0 +1,81 @@
+% DIV Grösser -> Mehr Text pro Seite
+% Bindekorrektur BCOR
+% A5
+%\usepackage[a5paper,BCOR12mm]{typearea}
+
+\usepackage{kpfonts}
+\usepackage{ucs}
+
+% Load symbols like «»
+\usepackage[T1]{fontenc}
+% Then load additional utf8 symbols + encoding
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{xcolor}
+\usepackage{fontenc}
+\usepackage{graphicx}
+
+\usepackage[dvips,pdftex,pdfusetitle]{hyperref}
+
+% Math environments
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{tabularx}
+
+% Bash
+% Table LibO -> LaTeX
+% cat file.txt |sed -e 's/\t/ \& /g' |perl -p -e 's/$/ \\\\/'
+
+\title{Amateurfunkbehelf}
+\author{Simon A. Eugster}
+\date{}
+
+\pdfinfo{%
+  /Title    (Amateurfunkbehelf)
+  /Author   (Simon A. Eugster)
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+\newcommand{\link}[1]{::#1}
+\newcommand\HUGE{\@setfontsize\Huge{38}{47}}
+
+\newcommand{\lit}[1]{
+\noindent
+\begin{minipage}{\textwidth}
+ \parbox[t]{1.2cm}{ \raisebox{-3mm}{\includegraphics[height=6mm]{./png/Amfu-Icon-Buch.png}} }
+ \parbox[t]{\dimexpr \textwidth-1.2cm}{#1}
+\end{minipage}
+}
+
+\begin{document}
+
+\begin{titlepage}
+ \begin{center}
+ \vspace*{2cm}
+ 
+ 
+ \includegraphics{./png/Amfu-Logo_Anja.png}
+ 
+ \vspace*{4cm}
+ 
+ % Full page width; http://tex.stackexchange.com/questions/265/fonts-larger-than-huge
+ \resizebox{\linewidth}{!}{Amateurfunkbehelf}
+ 
+\end{center}
+\end{titlepage}
+
+
+\input{Vorwort}
+
+\input{Einleitung}
+
+\input{Funkverkehr}
+
+\input{Frequenzen}
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+
+\newlength{\hl}
+\settowidth{\hl}{Hello}
+Hello is \the\hl\ wide.
+
+Text is \the\textwidth\ wide.
+
+\setlength{\parskip}{\parskip+6pt}
+
+Lines are \the\linewidth\ wide.
+
+Using width of Hello:\\
+Hello World.\\
+\hspace*{\hl}\ World.
+
+Stretching 1:3: | \hspace{\stretch{1}} 1 \hspace{\stretch{1}} | \hspace{\stretch{3}} 3 \hspace{\stretch{3}} |
+
+Stretching 1:1: | \hfill 1 \hfill | \hfill 1 \hfill |
+
+\newsavebox{\myBox}
+\savebox{\myBox}{
+Image of the width of this text
+}
+
+\newlength{\imgW}
+\settowidth{\imgW}{\usebox{\myBox}}
+
+Text width is \the\imgW
+
+\framebox[\textwidth][l]{%
+  \includegraphics[width=\imgW]{./png/AvatarGranjow.png}%
+  \hspace{2mm}%
+  \usebox{\myBox}%
+}
+
+\framebox[\textwidth][l]{
+ \framebox[.2\textwidth][l]{Hello.}
+ \framebox[\dimexpr \textwidth-.2\textwidth][l]{Second part.}
+}
+\noindent
+\setlength{\fboxsep}{0pt}
+\framebox[\textwidth][l]{
+ \framebox[.2\textwidth][l]{Hello.}
+ \framebox[\dimexpr \textwidth-.2\textwidth][l]{Second part.}
+}
+
+\noindent
+\fbox{
+ \framebox[.2\textwidth][l]{Hello.}
+ \framebox[\dimexpr \textwidth-.2\textwidth][l]{Second part.}
+}
+
+\noindent
+\begin{minipage}{\textwidth}
+ \parbox{.2\textwidth}{Hello.}
+ \parbox{\dimexpr \textwidth-.2\textwidth}{Second part.}
+\end{minipage}
+
+
+\noindent
+\begin{minipage}{\textwidth}
+ \parbox[t]{1.2cm}{ \raisebox{-3mm}{\includegraphics[height=6mm]{./png/Amfu-Icon-Buch.png}} }
+ \parbox[t]{\dimexpr \textwidth-1.2cm}{PDF-Dokument über Typografie: «typokurz -- Einige wichtige typografische Regeln» von Christoph Bier, \href{http://www.zvisionwelt.de}{zvisionwelt.de} }
+\end{minipage}
+
+
+\end{document}
