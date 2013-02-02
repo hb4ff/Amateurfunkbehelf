@@ -6,9 +6,16 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{xtab}
 
 
 \begin{document}
+
+\newcommand{\wrap}[1]{\begin{minipage}[t]{4cm}#1\end{minipage}}
+\begin{xtabular}{lll}
+QRI & Wie ist der Ton meiner Aussendung? & Der Ton Ihrer Aussendung ist 1: gut 2: veränderlich 3: schlecht \\
+QRK & Wie ist die Verständlichkeit meiner Zeichen (oder der Zeichen von ...)? & \wrap{Die Verständlichkeit Ihrer Zeichen (oder der Zeichen von ...) ist\\ 1: schlecht\\ 2: mangelhaft\\ 3: ausreichend\\ 4: gut\\ 5: ausgezeichnet} \\
+\end{xtabular}
 
 
 \newlength{\hl}

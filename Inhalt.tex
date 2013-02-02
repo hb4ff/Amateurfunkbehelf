@@ -22,7 +22,10 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
-\usepackage{tabularx}
+% For top/mid/bottomrule
+\usepackage{booktabs}
+
+\usepackage{xtab}
 
 % Bash
 % Table LibO -> LaTeX
@@ -51,6 +54,9 @@
  \parbox[t]{\dimexpr \textwidth-1.2cm}{#1}
 \end{minipage}
 }
+
+% \toprule width
+\setlength{\heavyrulewidth}{.1em}
 
 \begin{document}
 
