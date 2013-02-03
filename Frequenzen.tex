@@ -1,8 +1,8 @@
 
 \chapter{Frequenzen}
 \section{Amateur-Frequenzbänder}
-\subsection{Einteilungsempfehlung der Kurzwellenbänder}\footnote{Gemäss dem Bandplan 2011 der \link{IARU}}
-Die Pläne werden für drei Regionen erstellt; Region 1 (Europa), Region 2 (Amerika) und Region 3 (Asien). Die maximale Bandbreite sollte nicht überschritten werden.
+\subsection{Einteilungsempfehlung der Kurzwellenbänder}
+Die Pläne werden für drei Regionen erstellt; Region 1 (Europa), Region 2 (Amerika) und Region 3 (Asien). Die maximale Bandbreite sollte nicht überschritten werden. Die folgende Tabelle entspricht dem Bandplan 2011 von \href{http://www.iaru.org/region-1.html}{iaru.org} für die Region 1.
 
 Automatische (unbeaufsichtigte) Stationen sind nur in den dafür vorgesehenen Frequenzbereichen erlaubt.
 
@@ -11,27 +11,85 @@ Legende: CW = Morse, NB = Schmalband, WB = Alle Betriebsarten, -- =  Senden nich
 {
 \setlength{\belowrulesep}{1pt}
 \setlength{\aboverulesep}{1pt}
-\newcommand{\wrap}[1]{\begin{minipage}[t]{5.5cm}#1\end{minipage}}
-\begin{longtabu} to \linewidth {p{1cm} p{1.6cm} p{1.2cm} p{.6cm} p{5cm}}
-\rowfont \bfseries Band & $f$-Bereich & Bandbr. & für & Bemerkungen \\
+\definecolor{nr}{cmyk}{0,1,1,0}
+\newcommand{\notruf}[1]{\textcolor{nr}{ #1\,kHz: \textit{Notruffrequenz}}}
+
+\begin{longtabu} to \linewidth {r @{\hspace{4pt}} p{1.6cm} @{} r @{\hspace{4pt}} c @{\hspace{4pt}} p{6.8cm}}
+\rowfont \bfseries Band & $f$ (kHz) & Bandbr. & für & Bemerkungen \\
 \toprule
 \endhead
-\arrayrulecolor{rowsep}
-\bfseries LW & 135.7–137.8 & 200 Hz & NB & Ink. QRSS1 \\
-\midrule
-\bfseries 160 m & 1810–1838 & 200 Hz & CW & QRP auf 1836 kHz \\
- & 1838–1840 & 500 Hz & CW \\
- & 1838–1840 & 500 Hz & NB \\
- & 1840–1843 & 2700 Hz & * & + Digital \\
- & 1843–2000 & 2700 Hz \\
-\midrule
-\bfseries 80 m & 3500–3510 & 200 Hz & CW & interkontinentale QSOs bevorzugt \\
- & 3510–3560 & 200 Hz & CW & Contest bevorzugt, QRS auf 3555 kHz \\
- & 3560–3580 & 200 Hz & CW & QRP auf 3560 kHz \\
- & 3580–3600 & 500 Hz & NB & 3590–3600 kHz: Unbeaufsichtigte Stationen\\
- & 3600–3650 & 2700 Hz & NB & Telefonie-Contest bevorzugt, SSB auf 3630 kHz\\
- & 3650–3700 & 2700 Hz & WB & 3690 kHz: QRP-Anruffrequenz\\
- & 3700–3800 & 2700 Hz & WB & Telefonie-Contest­bereich bevorzugt. 3735 kHz: Bilder, 3760 kHz: Notruffrequenz\\
- & 3775–3800 & 2700 Hz & WB & Priorität für interkontinentale Verbindungen
+
+\bfseries LW & 135.7–137.8 & 200 Hz & NB & Ink. QRSS1 \\ \arrayrulecolor{rowsep} \midrule
+
+\bfseries 160 m & 1810–1838 & 200 Hz & CW & QRP-Zentrum auf 1836 kHz \\ \arrayrulecolor{white} \midrule
+ & 1838–1840 & 500 Hz & CW \\ \midrule
+ & 1838–1840 & 500 Hz & NB \\ \midrule
+ & 1840–1843 & 2700 Hz & WB & + Digital \\ \midrule
+ & 1843–2000 & 2700 Hz & WB \\ \arrayrulecolor{rowsep} \midrule
+
+\bfseries 80 m & 3500–3510 & 200 Hz & CW & interkontinentale QSOs bevorzugt \\ \arrayrulecolor{white} \midrule
+ & 3510–3560 & 200 Hz & CW & Contest bevorzugt, QRS auf 3555 kHz \\ \midrule
+ & 3560–3580 & 200 Hz & CW & QRP auf 3560 kHz \\ \midrule
+ & 3580–3600 & 500 Hz & NB & 3590–3600 kHz: Unbeaufsichtigte Stationen\\ \midrule
+ & 3600–3650 & 2700 Hz & NB & Telefonie-Contest bevorzugt, SSB auf 3630 kHz\\ \midrule
+ & 3650–3700 & 2700 Hz & WB & 3690 kHz: QRP-Anruffrequenz\\ \midrule
+ & 3700–3800 & 2700 Hz & WB & Telefonie-Contest­bereich bevorzugt. 3735 kHz: Bilder, \notruf{3760}\\ \midrule
+ & 3775–3800 & 2700 Hz & WB & Priorität für interkontinentale Verbindungen \\ \arrayrulecolor{rowsep} \midrule
+
+\bfseries 40 m & 7000–7040 & 200 Hz & CW & 7030 kHz: QRP-Anruffrequenz \\ \arrayrulecolor{white} \midrule
+ & 7040–7050 & 500 Hz & NB & Unbeaufsichtigte Stationen ab 7047 kHz \\ \midrule
+ & 7050–7060 & 2700 Hz & WB & Unbeaufsichtigt bis 7053 kHz \\ \midrule
+ & 7060–7100 & 2700 Hz & WB & SSB-Contest bevorzugt, Aufruf auf 7070 kHz, QRP auf 7090 kHz \\ \midrule
+ & 7100–7130 & 2700 Hz & WB & \notruf{7110} \\ \midrule
+ & 7130–7200 & 2700 Hz & WB & SSB-Contest bevorzugt, Bilder auf 7165 kHz \\ \midrule
+ & 7175–7200 & 2700 Hz & WB & Interkontinental bevorzugt \\ \arrayrulecolor{rowsep} \midrule
+\end{longtabu}
+
+\begin{longtabu} to \linewidth {r @{\hspace{4pt}} r @{\hspace{4pt}} r @{\hspace{4pt}} c @{\hspace{4pt}} p{6.4cm}}
+\rowfont \bfseries Band & $f$ (kHz) & Bandbr. & für & Bemerkungen \\
+\toprule
+\endhead
+\bfseries 30 m & 10 100–10 140 & 200 Hz & CW & 10 116 kHz: QRP-Anruffrequenz \\ \arrayrulecolor{white} \midrule
+ & 10 140–10 150 & 500 Hz & NB \\ \arrayrulecolor{rowsep} \midrule
+
+\bfseries 20 m & 14 000–14 060 & 200 Hz & CW & Contestbereich bevorzugt, QRS auf 14 055 kHz \\ \arrayrulecolor{white} \midrule
+ & 14 060–14 070 & 200 Hz & CW & QRP auf 14 060 kHz \\ \midrule
+ & 14 070–14 099 & 500 Hz & NB & Unbeaufsichtigt ab 14 089 kHz \\ \midrule
+ & 14 099–14 101 &        & -- & Bakenfrequenz exklusive \\ \midrule
+ & 14 101–14 125 & 2700 Hz & WB & Unbeaufsichtigt bis 14 112 kHz \\ \midrule
+ & 14 125–14 300 & 2700 Hz & WB & SSB-Contest bevorzugt, Voice auf 14 130 kHz. Dxpeditions auf 14 195±5 kHz, Bilder auf 14 230 kHz. QRP-SSB auf 14 285 kHz. \\ \midrule
+ & 14 300–14 350 & 2700 Hz & WB & \notruf{14 300} \\ \midrule
+ & 14 190–14 200 & 2700 Hz & WB & 14 195 $\pm$ 5 MHz: Dxpeditionen \\ \midrule
+ & 14 300–14 350 & 2700 Hz & WB & 14 230 kHz: SSTV/Fax-Anruffrequenz \\ \arrayrulecolor{rowsep} \midrule
+ 
+\bfseries 17 m & 18 068–18 095 & 200 Hz & CW & 18 086 kHz: QRP-Frequenz \\ \arrayrulecolor{white} \midrule
+ & 18 095–18 109 & 500 Hz & NB & Unbeaufsichtigt ab 18 105 kHz \\ \midrule
+ & 18 109–18 111 &        & -- & Bakenfrequenz – exklusive \\ \midrule
+ & 18 111–18 120 & 2700 Hz & WB & Unbeaufsichtigt \\ \midrule
+ & 18 120–18 168 & 2700 Hz & WB & QRP-SSB auf 18 130 kHz, Voice auf 18 150 kHz. \notruf{18 160} \\ \arrayrulecolor{rowsep} \midrule
+ 
+\bfseries 15 m & 21 000–21 070 & 200 Hz & CW & QRP auf 21 055 kHz, QRS auf 21 060 kHz \\ \arrayrulecolor{white} \midrule
+ & 21 070–21 110 & 500 Hz & NB & Unbeaufsichtigt ab 21 090 kHz \\ \midrule
+ & 21 110–21 120 & 500 Hz & WB & Unbeaufsichtigte Stationen erlaubt \\ \midrule
+ & 21 120–21 149 & 200 Hz & NB &  \\ \midrule
+ & 21 149–21 151 & 200 Hz & -- & Bakenfrequenz – exklusive \\ \midrule
+ & 21 151–21 450 & 2700 Hz & WB & Sprache auf 21 180 kHz, QRP-SSB auf 21 285 kHz. Bilder auf 21 340 kHz, \notruf{21 360} \\ \arrayrulecolor{rowsep} \midrule
+ 
+\bfseries 12 m & 24 890–24 915 & 200 Hz & CW & 24 906 kHz: QRP-Frequenz \\ \arrayrulecolor{white} \midrule
+ & 24 915–24 929 & 500 Hz & NB & Unbeaufsichtigt ab 24 925 kHz \\ \midrule
+ & 24 929–24 931 & 200 Hz & -- & Bakenfrequenz – exklusive \\ \midrule
+ & 24 931–24 990 & 2700 Hz & WB & Unbeaufsichtigt bis 24 940 kHz \\ \arrayrulecolor{rowsep} \midrule
+
+\bfseries 10 m & 28 000–28 070 & 200 Hz & CW & QRS auf 28 055 kHz, QRP auf 28 060 kHz \\ \arrayrulecolor{white} \midrule
+ & 28 070–28 190 & 500 Hz & NB & Unbeaufsichtigt auf 28 120+30 kHz \\ \midrule
+ & 28 190–28 225 &        & -- & Baken; regional bis 28 199 kHz \\ \midrule
+ & 28 225–28 320 & 2700 Hz & WB & Baken bis 28 300 kHz, danach unbeaufsichtigt \\ \midrule
+ & 28 320–29 100 & 2700 Hz & WB & QRP-SSB: 28 360 kHz. Bilder: 28 680 kHz. \\ \midrule
+ & 29 100–29 200 & 6000 Hz & WB & Simplex-FM, 10-kHz-Kanäle (29\,110--29\,290 kHz) \\ \midrule
+ & 29 200–29 300 & 6000 Hz & WB & Unbeaufsichtigte Stationen \\ \midrule
+ & 29 300–29 510 & 6000 Hz & WB & Satelliten-Downlink exklusive \\ \midrule
+ & 29 510–29 520 &         & -- & Schutzkanal \\ \midrule
+ & 29 520–29 700 & 6000 Hz & WB & FM: Aufruf auf 29 600 kHz, Relais ab 29 610 kHz \\ \arrayrulecolor{rowsep} \midrule
+
 \end{longtabu}
 }
