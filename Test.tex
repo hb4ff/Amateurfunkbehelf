@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[draft]{article}
 
 \usepackage{array}
 \usepackage{tabularx}
@@ -6,10 +6,29 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{xcolor}
 \usepackage{xtab}
 
 
 \begin{document}
+
+
+{
+\newcommand{\freq}[2]{\parbox[t]{6em}{#1\\ \small #2}}
+
+\begin{tabular}{l @{\hspace{4pt}} r @{\hspace{6pt}} p{7cm}}
+\toprule
+\freq{SLF}{30…300 Hz} & $10^3…10^4$ km & \parbox{7cm}{(Einweg-)Kommunikation zu U-Booten.\\ Elektromagnetische Frequenzen dieser Wellenlänge können \dots} \\ \midrule
+\end{tabular}
+
+
+\begin{tabular}{l @{\hspace{4pt}} r @{\hspace{6pt}} p{7cm}}
+\toprule
+\freq{SLF}{30…300 Hz} & $10^3…10^4$ km & \parbox[t]{7cm}{(Einweg-)Kommunikation zu U-Booten.\\ Elektromagnetische Frequenzen dieser Wellenlänge können \dots} \\ \midrule
+\end{tabular}
+}
+
 
 \newcommand{\wrap}[1]{\begin{minipage}[t]{4cm}#1\end{minipage}}
 \begin{xtabular}{lll}
@@ -81,6 +100,34 @@ Text width is \the\imgW
  \parbox[t]{1.2cm}{ \raisebox{-3mm}{\includegraphics[height=6mm]{./png/Amfu-Icon-Buch.png}} }
  \parbox[t]{\dimexpr \textwidth-1.2cm}{PDF-Dokument über Typografie: «typokurz -- Einige wichtige typografische Regeln» von Christoph Bier, \href{http://www.zvisionwelt.de}{zvisionwelt.de} }
 \end{minipage}
+
+
+
+\begin{minipage}[t]{\textwidth}
+\colorbox{red}{
+\begin{minipage}[t]{.45\textwidth}
+\begin{tabular}{r @{---} l l}
+1.810 & 2.000 & MHz \\ \midrule
+3.500 & 3.800 & MHz \\ \midrule
+\end{tabular}
+\vspace{\stretch{1}}
+\end{minipage}
+}
+\colorbox{blue}{
+\begin{minipage}[t]{.45\textwidth}
+\begin{tabular}{r @{---} l l}
+ 135.7 & 137.8 & kHz \\ \midrule
+1.810 & 2.000 & MHz \\ \midrule
+3.500 & 3.800 & MHz \\ \midrule
+7.000 & 7.200 & MHz \\ \midrule
+10.100 & 10.150 & MHz \\ \midrule
+14.000 & 14.350 & MHz \\ \midrule
+18.068 & 18.168 & MHz \\ \midrule
+\end{tabular}
+\end{minipage}
+}
+\end{minipage}
+
 
 
 \end{document}
