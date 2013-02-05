@@ -347,37 +347,160 @@ z & \ru{з} & ? \\ \midrule
 \end{tabular}
 
 \subsection{Zeitzeichen-Frequenzen auf Kurzwelle}
+Eine aktuelle Liste ist unter Anderem unter \href{http://de.wikipedia.org/wiki/Zeitzeichensender}{Wikipedia:Zeitzeichensender} und auf sfmeter.net\footnote{\href{http://www.smeter.net/stations/hf-time-frequency.php}{http://www.smeter.net/stations/hf-time-frequency.php}} zu finden.
+
+Da die meisten Zeitzeichensender von einem Standort aus gleich auf mehreren Frequenzen senden, kann man sich so einen Überblick über die Ausbreitungsbedingungen schaffen. In Europa ist RWM gut erreichbar.
 
 {
-\newcommand{\desc}[2]{\begin{minipage}{6em} \hfill \textbf{#1}\\  \footnotesize \raggedleft #2 \end{minipage}}
+\newcommand{\desc}[2]{\begin{varwidth}[t]{6em} \hfill \textbf{#1}\\  \footnotesize \raggedleft #2 \end{varwidth}}
 \newcommand{\freq}[2]{\parbox[t]{6em}{#1\\ \footnotesize #2}}
+\newcommand{\mul}[1]{\begin{varwidth}[t]{6em} #1 \end{varwidth} }
 
-
-\begin{longtabu} to \linewidth{rl rrl}
-\desc{Frequenz}{kHz} & \bfseries Call & \desc{Power}{[kW]} & \desc{Reich­weite}{Meilen} & \bfseries Standort \\ \toprule
+\begin{longtabu} to \linewidth{rl r p{6cm}}
+\bfseries Call & \desc{Frequenzen}{kHz} & \desc{Power}{[kW]} & \bfseries Beschreibung \\ \toprule
 \endhead
-2500 & WWV & 2.5 & 358 & Colorado, USA \\ \midrule
- & WWVH & 5 & 3070 & Hawaii \\ \midrule
-3330 & CHU & 3 & 1830 & Ottawa, Kanada \\ \midrule
-3810 & HD2IOA & 1 & 3375 & Ecuador Military Navy Time \\ \midrule
-4670 & CHU &  &  & Ottawa, Kanada \\ \midrule
-4996 & RWM &  & 5550 & Russia \\ \midrule
-4998 & EBC & 10 & 5350 & Spain \\ \midrule
-5000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
- & WWVH & 10 & 3070 & Hawaii \\ \midrule
-7335 & CHU & 10 & 1830 & Ottawa, Kanada \\ \midrule
-9996 & RWM &  & 5550 & Russia \\ \midrule
-10 000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
- & WWVH & 10 & 3070 & Hawaii \\ \midrule
-14 996 & RWM &  & 5550 & Russia \\ \midrule
-15 000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
- & WWVH & 10 & 3070 & Hawaii \\ \midrule
-15 006 & EBC & 10 & 5350 & Spain \\ \midrule
-20 000 & WWV & 2.5 & 358 & Colorado, USA \\ \midrule
+\arrayrulecolor{rowsep}
+WWV & \mul{2500\\ 5000\\ 10\,000\\ 15\,000\\ 20\,000} & \mul{2.5\\ 10\\ 10\\ 10\\ 2.5} & Colorado, USA, vom NIST (National Institute of Standards and Technology). Zeitinformationen werden auch in Voice ausgegeben.\footnote{Siehe \href{http://www.nist.gov/pml/div688/grp40/wwv.cfm}{http://www.nist.gov/pml/div688/grp40/wwv.cfm}} \\ \midrule
+WWVH & \mul{2500\\ 5000\\ 10\,000\\ 15\,000} & \mul{5\\ 10\\ 10\\ 10} & Hawaii, USA. (NIST; wie oben.)\footnote{Siehe \href{http://tf.nist.gov/timefreq/stations/wwvh.htm}{http://tf.nist.gov/timefreq/stations/wwvh.htm}}\\ \midrule
+CHU & \mul{3330\\ 7850\\ 14\,670} & \mul{3\\ 10\\ 3} & Ottawa, Kanada. Bis Ende 2008 wurde auf 7335\,kHz statt 7850\,kHz gesendet.\footnote{Siehe \href{http://www.nrc-cnrc.gc.ca/eng/services/time/short\_wave.html}{http://www.nrc-cnrc.gc.ca/eng/services/time/short\_wave.html} }\\ \midrule
+RWM & \mul{4996\\ 9996\\ 14996} & \mul{5\\ 8\\ 8} & Moskau, Russland. Ein Sendeplan befindet sich auf der Englischen \href{http://en.wikipedia.org/wiki/RWM}{Wikipedia:RWM}.\\ \midrule
+5000 & YVTO & 1 & Venezuela. Nur Voice. \\ \midrule
+
+
 \end{longtabu}
 
+}
+
+\section{Verfahrenspezifische Frequenzen}
+\subsection{QRP-Frequenzen}
+Auf diesen Frequenzen wird mit verringerter Leistung (≤ 5 W) gesendet.
+
+\vspace{1em}
+\noindent
+\begin{tabular}{r r}
+\bfseries CW & \bfseries SSB \\ \toprule \arrayrulecolor{rowsep}
+ 1 810 kHz &  1 843 kHz \\ \midrule
+ 3 560 kHz &  3 690 kHz \\ \midrule
+ 7 030 kHz &  7 060 kHz \\ \midrule
+10 106 kHz &          — \\ \midrule
+14 060 kHz & 14 285 kHz \\ \midrule
+18 106 kHz & 18 130 kHz \\ \midrule
+21 060 kHz & 21 285 kHz \\ \midrule
+24 906 kHz & 24 950 kHz \\ \midrule
+28 060 kHz & 28 360 kHz \\ \midrule
+\end{tabular}
+
+\subsection{QRS-Frequenzen CW}
+Auf diesen Frequenzen (plus 5 kHz aufwärts) wird etwas langsamer gemorst. Sie sind speziell für Einsteiger sind sie empfehlenswert.
+
+\vspace{1em}
+\noindent
+\begin{tabular}{r}
+  \textbf{QRS} \\ \toprule \arrayrulecolor{rowsep}
+  3555 kHz \\ \midrule
+  7055 kHz \\ \midrule
+  7155 kHz \\ \midrule
+14 055 kHz \\ \midrule
+21 055 kHz \\ \midrule
+28 055 kHz \\ \midrule
+\end{tabular}
+
+\subsection{Frequenzen für PSK}
+Die folgenden Frequenzen werden häufig für PSK verwendet und sind daher eine gute Wahl als Aufruffrequenz.
+
+\vspace{1em}
+\noindent
+\begin{tabular}{rlr}
+\bfseries Frequenz & \bfseries Region & \bfseries Frequenz \\ \toprule \arrayrulecolor{rowsep}
+1838 kHz &  & 14 070 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+3580 kHz &  & 18 100 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+7035 kHz & Region 1/3 & 21 080 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+7071 kHz & USA & 24 920 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+7080 kHz & Region 2 & 28 070 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+10 142 kHz &  & 28 120 kHz \\ \cmidrule{1-1} \cmidrule{3-3}
+\end{tabular}
+
+\subsection{SSTV- und FAX-Frequenzen}
+\noindent
+\begin{tabular}{r}
+\bfseries Frequenz \\ \toprule \arrayrulecolor{rowsep}
+  3730 kHz \\ \midrule
+  7040 kHz \\ \midrule
+14 230 kHz \\ \midrule
+21 340 kHz \\ \midrule
+28 680 kHz \\ \midrule
+\end{tabular}
+
+\subsection{Pactor-Mailboxen}
+\paragraph{HB9AK} bei JN47FE scannt die Frequenzen 7051.5, 10145.9, 14110.4 und 18115.9 kHz.
+\paragraph{HB9HAI} bei JN46VU scannt alle Frequenzen von 3.5 bis 28 MHz.
+\paragraph{HB9IAC} bei JN36DF scannt 3582--3586, 7038--7040, 10\,142--10\,146, 14\,068--14\,076, 21\,072--21\,083 und 28\,087--28\,103\,kHz.
+\paragraph{HB9XQ} bei JN36PV scannt 3613, 7054 und 14\,119 kHz.
+\paragraph{HB9MM} bei JN36EH scannt 3605.5, 7053.0, 10\,145.0 und 14\,109.2\,kHz.
 
 
+\section{Spezielle Aktivitäten}
+
+\subsection{Schweizer Amateurfunkativitäten}
+Siehe auch: \href{http://funkperlen.wordpress.com/2010/11/22/schweizer-runden/}{http://funkperlen.wordpress.com/2010/11/22/schweizer-runden/}
+
+\begin{longtabu} to \linewidth{r p{2cm} r p{5cm}}
+\rowfont \bfseries HBT\footnote{Abkürzung für HB Time, also Lokalzeit in der Schweiz} & Wochentag & Frequenz & Region, Mode \\ \toprule
+\endhead \arrayrulecolor{rowsep}
+20:15 Uhr & Letzter Sonntag im Monat & 145.6625 MHz & Rheintal \\ \midrule
+10:30 Uhr & Sonntag   & 51.490 MHz & Schweiz; FM \\ \midrule
+10:45 Uhr & Sonntag   & 50.163 MHz & Schweiz; USB \\ \midrule
+24 h      & Täglich   & 14.347 MHz & RARES (Russian Amateur Radio Emer­gency Service), Notruffrequenz \\ \midrule
+08:00 Uhr & Werktags  & 14.335 MHz & Australienrunde \\ \midrule
+24 h      & Täglich   & 14.292 MHz & RARES-Meetings; SSB/CW \\ \midrule
+12:30 Uhr & Werktags   & 14.317 MHz & Auslandschweizer \\ \midrule
+23:00 Uhr & Sommer    & 14.172 MHz & Seeräuberrunde \\ \midrule
+22:00 Uhr & Winter    & 14.172 MHz & Seeräuberrunde \\ \midrule
+08:45 Uhr & Jeden 2. Sonntag & 3775 MHz & USKA News \\ \midrule
+09:00 Uhr & Sonntag   & 3775 MHz & Schweizer-Runde \\ \midrule
+10:00 Uhr & Sonntag   & 3710 MHz & Flughafenrunde FHR \\ \midrule
+18:15 Uhr & Täglich   & 3747.5 MHz & Bernerrunde \\ \midrule
+20:30 Uhr & Sonntag   & 3695 MHz & Rheintal \\ \midrule
+24 h      & Täglich   & 3637 MHz & Chaotentrunde \\ \midrule
+19:00 Uhr & Montag    & 3574 kHz & Morseübungssendung vom HTC,  40–140 BpM (8–28 wpm) \\ \midrule
+20:05 Uhr & Montag    & 1991 MHz & Montagsrunde, Zürich \\ \midrule
+\end{longtabu}
+
+\subsection{SOTA-Frequenzen}
+Berg-Aktivitäten (Funk von Berg zu Berg) finden auf folgenden SOTA-Vorzugsfrequenzen statt:
+
+\vspace{1em}
+\begin{tabular}{lrrrrrrrrl}
+ \bfseries CW & 28 060 & 24 906 & 21 060 & 18 096 & 14 060 & 10 106 & 7030 & 3560 & kHz \\ \toprule
+\bfseries SSB & 28 365 & 24 950 & 21 285 & 18 130 & 14 285 & — & 7090 & 3690 & kHz
+\end{tabular}
+
+
+\subsection{IOTA-Frequenzen}
+Insel-Aktivitäten finden auf folgenden IOTA-Vorzugsfrequenzen statt:
+
+\vspace{1em}
+\begin{tabular}{lrrrrrrrrl}
+\bfseries CW & 28 040 & 24 920 & 21 040 & 18 098 & 14 040 & 10 115 & 7030 & 3530 & kHz \\ \toprule
+\bfseries SSB & 28 560 & 28 460 & 24 950 & 21 260 & 18 128 & 14 260 & 7055 & 3755 & kHz
+\end{tabular}
+\vspace{1em}
+
+Diese Frequenzen müssen für Verbindungen zwischen Inseln freigehalten werden.
+
+\subsection{Flugfunk}
+Auf VHF/UHF werden für Flugfunk (AM!) folgende Frequenzen verwendet:
+
+\vspace{1em}
+\begin{tabular}{rcll}
+\multicolumn{3}{c}{\textbf{Frequenz}} & \textbf{Verwendung} \\ \toprule \arrayrulecolor{rowsep}
+118 & — & 137 MHz & zivil \\ \midrule
+138 & — & 144 MHz & mil \\ \midrule
+241.5 & — & 386 MHz & mil/ziv \\ \midrule
+\end{tabular}
+\vspace{1em}
+
+Flugfunk darf in der Schweiz mitgehört werden.
 
 
 

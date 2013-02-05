@@ -12,6 +12,7 @@
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage{colortbl}
+\usepackage{varwidth}
 \usepackage[a4paper,BCOR12mm,DIV20]{typearea}
 
 \usepackage[ngerman,russian]{babel}
@@ -21,7 +22,19 @@
 
 \begin{document}
 
-\newcommand{\desc}[2]{ \begin{minipage}{6em} \flushright \textbf{#1}\\ \footnotesize #2 \end{minipage} }
+\fbox{
+\begin{minipage}{2cm}
+minipage
+\end{minipage}
+}
+\fbox{
+\begin{varwidth}{2cm}
+ varwidth
+\end{varwidth}
+
+}
+
+\newcommand{\desc}[2]{ \begin{minipage}{6em} \textbf{#1}\\ \flushright \footnotesize #2 \end{minipage} }
 
 \desc{as}{df}
 
