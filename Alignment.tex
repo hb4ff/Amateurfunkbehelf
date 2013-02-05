@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{xcolor}
+
+\begin{document}
+ 
+\newcommand{\desc}[2]{ \begin{minipage}[t]{6em} \raggedleft \textbf{#1}\\  \footnotesize  #2 \end{minipage} }
+
+\begin{longtabu} to \linewidth{r l}
+ \desc{Frequency}{kHz} & \bfseries Callsign \\ \toprule
+\endhead
+2500 & WWV \\
+3330 & CHU
+\end{longtabu}
+ 
+\end{document}

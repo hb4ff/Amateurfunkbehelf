@@ -9,9 +9,49 @@
 \usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{xtab}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{colortbl}
+\usepackage[a4paper,BCOR12mm,DIV20]{typearea}
 
+\usepackage[ngerman,russian]{babel}
+\usepackage{DejaVuSerif}
+\newcommand{\ru}[1]{\usefont{T1}{DejaVuSerif-TLF}{m}{n} {\selectlanguage{russian} #1 \selectlanguage{ngerman} \fontfamily{cmr}\selectfont}}
+\renewcommand{\rmdefault}{cmr}
 
 \begin{document}
+
+\newcommand{\desc}[2]{ \begin{minipage}{6em} \flushright \textbf{#1}\\ \footnotesize #2 \end{minipage} }
+
+\desc{as}{df}
+
+\begin{longtabu} to \linewidth{lr}
+\desc{as}{df} & \desc{gh}{ij}
+\end{longtabu}
+
+
+\begin{tabular}{rlr}
+c & \ru{ц}& Москва (\textbf{Moskau}) \\ \midrule
+d & \ru{л} & Одеса (Odessa; Ukraine) \\ \midrule
+\end{tabular}
+
+{
+\newlength{\wRule}
+\setlength{\wRule}{1.5pt}
+\setlength{\belowrulesep}{0pt}
+\setlength{\aboverulesep}{0pt}
+\setlength{\cmidrulewidth}{\wRule}
+\setlength{\lightrulewidth}{0pt}
+\newcommand{\lrule}[1]{\multicolumn{1}{!{\vrule width \wRule}c}{#1}}
+\newcommand{\lrrule}[1]{\multicolumn{1}{!{\vrule width \wRule}c!{\vrule width \wRule}}{#1}}
+
+\begin{tabular}{cccc}
+ & 14 100 kHz & 18 110 kHz & Dist \\ \cmidrule{2-3}
+UN & \lrule{00, 03, …} & \lrrule{+ 10 s}  & 6050 \\
+Kanada & \lrule{+ 10 s} & \lrrule{+ 20 s} & 4550 \\
+USA & \lrule{+ 20 s} & \lrrule{+ 30 s} & 9050 \\ \cmidrule{2-3}
+\end{tabular}
+}
 
 
 {
@@ -30,8 +70,8 @@
 }
 
 
-\newcommand{\wrap}[1]{\begin{minipage}[t]{4cm}#1\end{minipage}}
-\begin{xtabular}{lll}
+\newcommand{\wrap}[1]{\begin{minipage}[t]{5.5cm}#1\end{minipage}}
+\begin{xtabular}{l p{5cm} p{6cm}}
 QRI & Wie ist der Ton meiner Aussendung? & Der Ton Ihrer Aussendung ist 1: gut 2: veränderlich 3: schlecht \\
 QRK & Wie ist die Verständlichkeit meiner Zeichen (oder der Zeichen von ...)? & \wrap{Die Verständlichkeit Ihrer Zeichen (oder der Zeichen von ...) ist\\ 1: schlecht\\ 2: mangelhaft\\ 3: ausreichend\\ 4: gut\\ 5: ausgezeichnet} \\
 \end{xtabular}

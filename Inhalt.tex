@@ -7,10 +7,14 @@
 \usepackage{ucs}
 
 % Load symbols like «»
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc} % Load amsmath before this! http://en.wikibooks.org/wiki/LaTeX/Internationalization#Cyrillic_script
 % Then load additional utf8 symbols + encoding
 \usepackage[utf8x]{inputenc}
-\usepackage[ngerman]{babel}
+\usepackage[russian,ngerman]{babel}
+
+\usepackage{DejaVuSerif}
+\newcommand{\ru}[1]{\usefont{T1}{DejaVuSerif-TLF}{m}{n} {\selectlanguage{russian} #1 \selectlanguage{ngerman} \fontfamily{cmr}\selectfont}}
+\renewcommand{\rmdefault}{cmr}
 
 \usepackage{xcolor}
 \usepackage{fontenc}
@@ -31,6 +35,8 @@
 \usepackage{longtable}
 \usepackage{tabu}
 \usepackage{colortbl}
+
+\usepackage{rotating}
 
 % Bash
 % Table LibO -> LaTeX
@@ -58,7 +64,7 @@
 \noindent
 \begin{minipage}{\textwidth}
  \parbox[t]{1.2cm}{ \raisebox{-3mm}{\includegraphics[height=6mm]{./png/Amfu-Icon-Buch.png}} }
- \parbox[t]{\dimexpr \textwidth-1.2cm}{#1}
+ \parbox[t]{\dimexpr \textwidth-1.3cm}{#1}
 \end{minipage}
 }
 

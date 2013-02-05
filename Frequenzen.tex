@@ -251,7 +251,130 @@ Die Baken senden in den ihnen zugeteilten 10 Sekunden zuerst ihr eigenes Ruf­ze
 Der Sendeplan der Baken sieht folgendermassen aus:
 
 
+{
+\newlength{\wRule}
+\setlength{\wRule}{1pt}
+\setlength{\belowrulesep}{0pt}
+\setlength{\aboverulesep}{0pt}
+\setlength{\cmidrulewidth}{\wRule}
+\setlength{\lightrulewidth}{0pt}
+\newcommand{\lrule}[1]{\multicolumn{1}{!{\vrule width \wRule} @{\hspace{4pt}} l @{}}{#1}}
+\newcommand{\lrrule}[1]{\multicolumn{1}{!{\vrule width \wRule} @{\hspace{4pt}} l @{} !{\vrule width \wRule}}{#1}}
+\newcommand{\rrule}[1]{\multicolumn{1}{@{\hspace{4pt}} l @{} !{\vrule width \wRule}}{#1}}
+\newcommand{\vd}{\rotatebox{90}{\tiny{…}}}
+\newcommand{\ta}{00, 03 \tiny{…}}
+\newcommand{\tb}{01, 04 \tiny{…}}
+\newcommand{\tc}{02, 05 \tiny{…}}
 
+\definecolor{colA}{gray}{.1}
+\definecolor{colB}{gray}{.2}
+\definecolor{colC}{gray}{.3}
+\definecolor{colD}{gray}{.4}
+\definecolor{colE}{gray}{.5}
+\newcommand{\pa}{\textcolor{colA}{+ 10 s}}
+\newcommand{\pb}{\textcolor{colB}{+ 20 s}}
+\newcommand{\pc}{\textcolor{colC}{+ 30 s}}
+\newcommand{\pd}{\textcolor{colD}{+ 40 s}}
+\newcommand{\pe}{\textcolor{colE}{+ 50 s}}
+
+\noindent
+\small{
+\begin{tabular}{r @{\hspace{4pt}} l @{\hspace{4pt}} l @{\hspace{6pt}} l @{\hspace{6pt}} l @{\hspace{6pt}} l @{\hspace{6pt}} l @{\hspace{4pt}} r}
+\bfseries RZ & \bfseries Land & \multicolumn{5}{c}{\textbf{Frequenz, Sendezeit} nach voller Stunde} & \bfseries km \\ [1.5ex]
+\arrayrulecolor{white} \midrule \arrayrulecolor{black}
+
+              &        & 14 100 kHz & 18 110 kHz & 21 150 kHz & 24 930 kHz & 28 200 kHz & zu Köln \\ [1.2ex]
+                         \cmidrule{3-7}
+UN            & 4u1un  & \lrule{\ta}        & \lrrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & 6050 \\ [1ex]
+Kanada        & ve8at  & \lrule{\pa}        & \lrrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & 4550 \\ [1ex]
+USA           & w6wx   & \lrule{\pb}        & \lrrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & \rrule{\tb}        & 9050 \\ [1ex]
+Hawaii        & kh6wo  & \lrule{\pc}        & \lrrule{\pd}        & \rrule{\pe}        & \rrule{\tb}        & \rrule{\pa}        & 11 890 \\ [1ex]
+Neuseeland    & zl6b   & \lrule{\pd}        & \lrrule{\pe}        & \rrule{\tb}        & \rrule{\pa}        & \rrule{\pb}        & 18 680 \\ [1ex]
+Australien    & vk6rbp & \lrule{\pe}        & \lrrule{\tb}        & \rrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & 14 050 \\ [1ex]
+Japan         & ja2igy & \lrule{\tb}        & \lrrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & 9390 \\ [1ex]
+Russland      & rr9o   & \lrule{\pa}        & \lrrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & 4900 \\ [1ex]
+Hong Kong     & vr2b   & \lrule{\pb}        & \lrrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & \rrule{\tc}        & 9300 \\ [1ex]
+Sri Lanka     & 4s7b   & \lrule{\pc}        & \lrrule{\pd}        & \rrule{\pe}        & \rrule{\tc}        & \rrule{\pa}        & 8250 \\ [1ex]
+Südafrika     & zs6dn  & \lrule{\pd}        & \lrrule{\pe}        & \rrule{\tc}        & \rrule{\pa}        & \rrule{\pb}        & 8780 \\ [1ex]
+Kenia         & 5z4b   & \lrule{\pe}        & \lrrule{\tc}        & \rrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & 6780 \\ [1ex]
+Israel        & 4x6tu  & \lrule{\tc}        & \lrrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & 3100 \\ [1ex]
+Finnland      & oh2b   & \lrule{\pa}        & \lrrule{\pb}        & \rrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & 1570 \\ [1ex]
+Madeira       & cs3b   & \lrule{\pb}        & \lrrule{\pc}        & \rrule{\pd}        & \rrule{\pe}        & \rrule{\ta}        & 2750 \\ [1ex]                                         
+Argentinien   & lu4aa  & \lrule{\pc}        & \lrrule{\pd}        & \rrule{\pe}        & \rrule{\ta}        & \rrule{\pa}        & 11 400 \\ [1ex]
+Peru          & oa4b   & \lrule{\pd}        & \lrrule{\pe}        & \rrule{\ta}        & \rrule{\pa}        & \rrule{\pb}        & 10 600 \\ [1ex]
+Venezuela     & yv5b   & \lrule{\pe}        & \lrrule{\ta}        & \rrule{\pa}        & \rrule{\pb}        & \rrule{\pc}        & 7950 \\ [1ex] 
+                         \cmidrule{3-7}
+\end{tabular}
+}
+}
+
+\paragraph{Bake DK0WCY} sendet von Scheggerott aus (QTH JO44VQ) auf 10 144 MHz rund um die Uhr in CW, RTTY und PSK31 (siehe \href{http://www.dk0wcy.de/schedule_en.html}{dk0wcy.de}).
+
+\paragraph{5-Mhz-Baken} in der Nähe:
+
+\vspace{1em}
+\begin{tabular}{ll}
+5195.0 kHz & DRA5 (Scheggerott) \\
+5269.5 kHz & VO1MRC \\
+5290.0 kHz & GB3RAL (nr Didcot) / GB3WES (Cumbria) / GB3ORK (Orkney)
+\end{tabular}
+
+\subsection{Ein-Buchstaben-Baken}
+\lit{Dokument der Bandwacht: \href{http://www.iarums-r1.org/bandwacht/diverses/baken.pdf}{iarums-r1.org/bandwacht/diverses/baken.pdf}}
+Auf einigen Frequenzen, unter anderem auf 7039 kHz, hat das Russische Militär Baken stationiert, die fortlaufend den selben Buchstaben im Morsecode senden. Über die Sendeleistung ist nichts bekannt, die Standorte hingegen konnten bestimmt werden.
+
+Bekannte Frequenzen (nach dem Bandwacht-Dokument) sind in kHz: 3070, 3088, 3090, 3564, 3649, 3658, 3699, 4558, 5154, 7039, 8495, 10 872, 13 258, 13 528, 16 332, 17 016 und 20 048. 
+
+%\newcommand\cyrtext[1]{{\fontencoding{T2A}\selectfont #1}}
+%\newcommand{\ru}[1]{\foreignlanguage{russian}{#1}}
+
+\begin{tabular}{rll}
+\bfseries Buchstabe & \bfseries Kyrillisch & \bfseries Standort \\ \toprule
+c & \ru{ц} & \ru{Москва} (Moskau) \\ \midrule
+d & \ru{л} & \ru{Одеса} (Odessa; Ukraine) \\ \midrule
+f & \ru{ф} & \ru{Владивосток} (Wladiwostok) \\ \midrule
+k & \ru{к} & \ru{Хаьаровск} (Chabarowsk) \\ \midrule
+l & \ru{л} & \ru{Санкт-Петербург} (Sankt Petersburg) \\ \midrule
+m & \ru{м} & \ru{Магадан} (Magadan) \\ \midrule
+o & \ru{о} & \ru{Москва} \\ \midrule
+p & \ru{п} & \ru{Калининграл} (Kaliningrad) \\ \midrule
+r & \ru{я} & \ru{Ижевск} (Ischewsk) \\ \midrule
+s & \ru{с} & \ru{Архангелск} (Archangelsk) \\ \midrule
+u & \ru{у} & \ru{Мурманск} (Murmansk) \\ \midrule
+v & \ru{ж} & \ru{Xiva} (Chiwa; Usbekistan) \\ \midrule
+ü & \ru{ю} & \ru{Холмск} (Kholmsk) \\ \midrule
+z & \ru{з} & ? \\ \midrule
+\end{tabular}
+
+\subsection{Zeitzeichen-Frequenzen auf Kurzwelle}
+
+{
+\newcommand{\desc}[2]{\begin{minipage}{6em} \hfill \textbf{#1}\\  \footnotesize \raggedleft #2 \end{minipage}}
+\newcommand{\freq}[2]{\parbox[t]{6em}{#1\\ \footnotesize #2}}
+
+
+\begin{longtabu} to \linewidth{rl rrl}
+\desc{Frequenz}{kHz} & \bfseries Call & \desc{Power}{[kW]} & \desc{Reich­weite}{Meilen} & \bfseries Standort \\ \toprule
+\endhead
+2500 & WWV & 2.5 & 358 & Colorado, USA \\ \midrule
+ & WWVH & 5 & 3070 & Hawaii \\ \midrule
+3330 & CHU & 3 & 1830 & Ottawa, Kanada \\ \midrule
+3810 & HD2IOA & 1 & 3375 & Ecuador Military Navy Time \\ \midrule
+4670 & CHU &  &  & Ottawa, Kanada \\ \midrule
+4996 & RWM &  & 5550 & Russia \\ \midrule
+4998 & EBC & 10 & 5350 & Spain \\ \midrule
+5000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
+ & WWVH & 10 & 3070 & Hawaii \\ \midrule
+7335 & CHU & 10 & 1830 & Ottawa, Kanada \\ \midrule
+9996 & RWM &  & 5550 & Russia \\ \midrule
+10 000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
+ & WWVH & 10 & 3070 & Hawaii \\ \midrule
+14 996 & RWM &  & 5550 & Russia \\ \midrule
+15 000 & WWV & 10 & 358 & Colorado, USA \\ \midrule
+ & WWVH & 10 & 3070 & Hawaii \\ \midrule
+15 006 & EBC & 10 & 5350 & Spain \\ \midrule
+20 000 & WWV & 2.5 & 358 & Colorado, USA \\ \midrule
+\end{longtabu}
 
 
 
