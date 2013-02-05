@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="318.89764"
+   height="248.03149"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/home/simon/svg"
+   sodipodi:docname="Amfu-PM.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/simon/Documents/OpenOffice/Behelf/images/Amfu-PM.png"
+   inkscape:export-xdpi="288"
+   inkscape:export-ydpi="288">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Dot_s"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Dot_s"
+       style="overflow:visible">
+      <path
+         id="path4228"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;marker-end:none"
+         transform="scale(0.2) translate(7.4, 1)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="263.86081"
+     inkscape:cy="122.07612"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="9cm"
+     height="7cm"
+     units="cm"
+     inkscape:window-width="1674"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/" />
+        <dc:date>2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Simon Eugster, hb9eia</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>GFDL, cc-by-sa</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Simon Eugster</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Pulsmodulation</dc:title>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Attribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4355"
+       transform="translate(0,-20.708119)">
+      <path
+         sodipodi:nodetypes="cs"
+         id="path2180"
+         d="M 46.361137,87.939731 C 101.44621,87.939731 98.328638,37.937183 155.96269,37.937183"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Dot_s);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Dot_s);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 156.46777,87.939731 C 211.55284,87.939731 208.43527,37.937183 266.06932,37.937183"
+         id="path2182"
+         sodipodi:nodetypes="cs" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3155"
+         d="M 50.182024,62.938461 L 260.74147,62.938461"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4360"
+       transform="translate(0,-6.7082901)">
+      <path
+         sodipodi:nodetypes="cccc"
+         d="M 266.06932,106.40708 C 208.43527,106.40708 211.93165,156.40963 156.84658,156.40963 C 155.29959,156.40963 158.17694,106.40708 155.58388,106.40708 C 97.949831,106.40708 101.44621,156.40963 46.361137,156.40963"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="path3157"
+         inkscape:export-filename="/home/simon/Documents/OpenOffice/Behelf/images/path3157.png"
+         inkscape:export-xdpi="288"
+         inkscape:export-ydpi="288" />
+      <path
+         sodipodi:nodetypes="cc"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 51.192177,131.40836 L 262.2567,131.40836"
+         id="path3161" />
+    </g>
+    <g
+       id="g4364"
+       transform="translate(0,5.555839)">
+      <path
+         id="path3166"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         d="M 266.06932,176.61268 C 208.43527,176.61268 217.55284,226.61523 162.46777,226.61523 C 156.29587,226.61523 157.1739,176.61268 149.96269,176.61268 C 92.328638,176.61268 101.44621,226.61523 46.361137,226.61523"
+         sodipodi:nodetypes="cccc" />
+      <path
+         id="path3168"
+         d="M 51.192177,201.61396 L 262.2567,201.61396"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       x="-120.603"
+       y="-19.580545"
+       id="text4368"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4370"
+         x="-120.603"
+         y="-19.580545">Pulsmodulation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       x="-37.74585"
+       y="-7.4376879"
+       id="text4372"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4374"
+         x="-37.74585"
+         y="-7.4376879">created by hb9eia</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       x="25.445862"
+       y="46.011189"
+       id="text4376"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/simon/Documents/OpenOffice/Behelf/images/Amfu-PM.svg.png"
+       inkscape:export-xdpi="288"
+       inkscape:export-ydpi="288"><tspan
+         sodipodi:role="line"
+         id="tspan4378"
+         x="25.445862"
+         y="46.011189">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       x="25.666077"
+       y="128.24719"
+       id="text4380"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/simon/Documents/OpenOffice/Behelf/images/Amfu-PM.svg.png"
+       inkscape:export-xdpi="288"
+       inkscape:export-ydpi="288"><tspan
+         sodipodi:role="line"
+         id="tspan4382"
+         x="25.666077"
+         y="128.24719">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:DejaVu Sans"
+       x="25.553284"
+       y="210.33281"
+       id="text4384"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/simon/Documents/OpenOffice/Behelf/images/Amfu-PM.svg.png"
+       inkscape:export-xdpi="288"
+       inkscape:export-ydpi="288"><tspan
+         sodipodi:role="line"
+         id="tspan4386"
+         x="25.553284"
+         y="210.33281">3</tspan></text>
+  </g>
+</svg>
