@@ -2,28 +2,30 @@
 \section{Empfangsbeurteilung}
 Die Empfangsbeurteilung, der sogenannte Signalrapport, der zwischen zwei Amateurstationen aus­getauscht wird, erfolgt im System «RST».
 
+\vspace{1em}
 \begin{tabular}{lll}
 \textbf{R} & Readability & (Lesbarkeit) \\
 \textbf{S} & Signal Strength & (Signalstärke)\\
 \textbf{T} & Tone Quality & (Tonqualität)
 \end{tabular}
+\vspace{1em}
 
 Die Skala für die Beurteilung der Lesbarkeit eines Signals reicht von 1 bis 5, diejenige für die Stärke und Tonqualität eines Signals jeweils von 1 bis 9.
 
-
+\vspace{1em}
 \begin{tabular}{llll}
- & R – Lesbarkeit & S – Signalstärke & T – Tonqualität \\
- \toprule
-1 & Nicht lesbar & Kaum hörbar & Äusserst rauer Wechselstromton \\
-2 & Zeitweise lesbar & Sehr schwach hörbar & Rauer Wechselstromton \\
-3 & Schwer lesbar & Schwach hörbar & Wechselstromton, leicht klingend \\
-4 & Lesbar & Ausreichend hörbar & \begin{minipage}[t]{4cm}{\raggedright Gleichgerichteter Wechsel\-strom\-ton, schlecht gefiltert}\end{minipage} \\
-5 & Gut lesbar & Mässig hörbar & Musikalisch modulierter Ton \\
-6 &  & Gut hörbar & Trillerton \\
-7 &  & Mässig stark hörbar & Unstabiler Gleichstromton \\
-8 &  & Stark hörbar & \begin{minipage}[t]{4cm}{\raggedright Stabiler Gleichstromton mit etwas Brummodulation}\end{minipage} \\
-9 &  & Äusserst stark hörbar & Reiner Gleichstromton
+ & R – Lesbarkeit & S – Signalstärke & T – Tonqualität \\ \toprule \arrayrulecolor{rowsep}
+1 & Nicht lesbar & Kaum hörbar & Äusserst rauer Wechselstromton \\ \midrule
+2 & Zeitweise lesbar & Sehr schwach hörbar & Rauer Wechselstromton \\ \midrule
+3 & Schwer lesbar & Schwach hörbar & Wechselstromton, leicht klingend \\ \midrule
+4 & Lesbar & Ausreichend hörbar & \begin{minipage}[t]{4cm}{\raggedright Gleichgerichteter Wechsel\-strom\-ton, schlecht gefiltert}\end{minipage} \\ \midrule
+5 & Gut lesbar & Mässig hörbar & Musikalisch modulierter Ton \\ \midrule
+6 &  & Gut hörbar & Trillerton \\ \midrule
+7 &  & Mässig stark hörbar & Unstabiler Gleichstromton \\ \midrule
+8 &  & Stark hörbar & \begin{minipage}[t]{4cm}{\raggedright Stabiler Gleichstromton mit etwas Brummodulation}\end{minipage} \\ \midrule
+9 &  & Äusserst stark hörbar & Reiner Gleichstromton \\ \midrule
 \end{tabular}
+\vspace{1em}
 
 Je nach Übertragungsverfahren werden Teile weggelassen, bei Voice-Verbindungen etwa die Tonqualität. Für Beispiele siehe \link{Muster-QSO in CW}, Seite 19 und \link{Muster-QSO Phonie}, Seite 20.
 
@@ -31,6 +33,7 @@ Je nach Übertragungsverfahren werden Teile weggelassen, bei Voice-Verbindungen 
 Die im Amateurfunk gebräuchlichen Abkürzungen dienen dazu, den Informationsaustausch effizienter zu gestalten. Die am häufigsten verwendeten Abkürzungen sind:
 
 {
+
 \begin{longtabu} to \linewidth{lll}
 \rowfont \bfseries Abkürzung & Bedeutung &  Übersetzung \\
 \toprule
@@ -171,15 +174,14 @@ YL & young lady & Funkamateurin \\ \midrule
 \vspace{1em}
 {
 \begin{tabular}{cccccccccc}
-\arrayrulecolor{rowsep}
 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 \\
-\midrule
+\toprule
 a & u & v & 4 & e & 6 & b & d & n & t
 \end{tabular}
 }
 \vspace{1em}
 
-Beispiele: rst 599 5nn, pwr 1tt w
+Beispiele: \texttt{rst 599 5nn}, \texttt{pwr 1tt w}
 
 (die RST-Nummer wird oft erst beim zweiten Mal abgekürzt, damit es auch von OMs gelesen werden kann, die das System noch nicht kennen)
 
@@ -198,7 +200,7 @@ Jenen Q-Codes, die mehrere numerierte Bedeutungen haben, ist die entsprechende N
 \setlength{\belowrulesep}{1pt}
 \setlength{\aboverulesep}{1pt}
 \newcommand{\wrap}[1]{\begin{minipage}[t]{5.5cm}#1\end{minipage}}
-\begin{longtabu} to \linewidth {p{.6cm}p{4cm}p{5.5cm}}
+\begin{longtabu} to \linewidth {p{.8cm} @{\hspace{6pt}} p{4cm}p{5.5cm}}
 \rowfont \bfseries Abk. & Frage & Antwort \\
 \toprule
 \endhead
