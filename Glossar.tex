@@ -1,8 +1,10 @@
 \chapter{Glossar}
 
 \newcommand{\term}[2]{
-\vspace{1em}\noindent {\large \bfseries \textsf{#1}} \vspace{.5em}\\
-#2}
+\vspace{1em}\noindent {\large \bfseries \color{seccol} \textsf{#1}}
+\begin{addmargin}{1em}
+#2
+\end{addmargin}}
 
 
 \term{AF}
@@ -15,7 +17,7 @@ Im Amateurfunk werden oftmals nur Frequenzen von 300 bis 3000 Hz übertragen, da
 {Der \textit{Automatic Gain Control} hält die AF auf einer bestimmten Stärke. Dies kann bei digitalen Übertragungsverfahren (RTTY, PSK) nützlich sein, da die Lautstärke konstant bleibt, bei CW ist er jedoch eher hinderlich, da während einer Sendepause das Rauschen gleich stark ist wie sonst das Signal.}
 
 \term{AM}
-{\link{Amplitudenmodulation, S. 35}}
+{Siehe \plink{sec:am}{Amplitudenmodulation}}
 
 \term{APRS}
 {Automatic Position and Recording System – ein Zusammenspiel von GPS und Packet Radio.
@@ -23,7 +25,7 @@ Im Amateurfunk werden oftmals nur Frequenzen von 300 bis 3000 Hz übertragen, da
 144.800 MHz}
 
 \term{Bake}
-{Baken (wie zum Beispiel die \link{NCDXF-Baken, S. 26}) senden immer auf einer bestimmten Frequenz. So kann man sich ein Bild der aktuellen Ausbreitungsbedingungen machen.
+{Baken (wie zum Beispiel die \plink{sec:ncdxf}{NCDXF-Baken}) senden immer auf einer bestimmten Frequenz. So kann man sich ein Bild der aktuellen Ausbreitungsbedingungen machen.
 
 Software: BeaconSee}
 
@@ -31,7 +33,7 @@ Software: BeaconSee}
 {Übergang von symmetrisch auf asymmetrisch (balanced – unbalanced). Beispiel: Übergang eines Dipols (symmetrisch) auf ein Koaxialkabel (asymmetrisch).}
 
 \term{Beam}
-{Siehe \link{Yagi}}
+{Anderer Name für eine \plink{sec:yagi}{Yagi-Antenne}.}
 
 \term{Betriebsart}
 {Die Betriebsart (also die Art, wie man Funkbetrieb macht) beinhaltet verschiedene Eigenschaften wie Verkehrsart (Simplex, Duplex, …), Modulation (AM, FM, …) und Übertragungsverfahren.}
@@ -67,7 +69,7 @@ $f_d = |f_{\mathrm{BFO}}-f_{\mathrm{ZF}}|$ lässt sich beim Empfänger meist dir
 Das ist auch der Grund, warum beim Scannen eines CW-Bandes die einen Signale höher, die andern tiefer werden. Beim Empfang eines breiten Spektrums haben zwei Signale, die $2\times \mathrm{f_d}$ auseinander liegen, die selbe AF-Tonhöhe! Darum verschwinden einige Signale beim verringern der Bandbreite, da sie zwar die eingestellte fd-Tonhöhe haben, aber um die zweifache fd-Frequenz weiter unten liegen. Sobald die Bandbreite unter $2\times \mathrm{f_d}$  liegt, hat man diese Probleme nicht mehr.}
 
 \term{Bodenwelle}
-{\link{Bodenwelle, Seite 33}}
+{Der Teil einer elektromagnetischen Welle, der sich über den Boden ausbreitet. Siehe \plink{sec:bodenwelle}{Bodenwelle}}
 
 \term{CB}
 {Abkürzung für \textit{Citizen Band}. Auf diesem HF-Band um 27 MHz kann, ähnlich wie bei PMR, ohne Lizenz gefunkt werden.}
@@ -101,7 +103,7 @@ Nähere Beschreibung in der \link{Formelsammlung}.}
 {DTMF (Dual Tone Multiple Frequency), auch MFV – Mehrfrequenzwahlverfahren – genannt, wird zum aktivieren von Relais und für die Auswahl von \link{Echolink}-Repeatern verwendet. Die meisten EL-Relais verlangen zuerst einen \textbf{*}, um EL zu aktivieren, bevor die Node-Nummer eingegeben wird. Die Raute (\textbf{\#}) beendet die Verbindung wieder.}
 
 \term{Dipol}
-{Ein Antennendraht der Länge $\lambda/2$. Siehe \link{Dipol, Seite 42}.}
+{Ein Antennendraht der Länge $\lambda/2$. Siehe \plink{sec:dipol}{Dipol}.}
 
 \term{Doppelsuper}
 {Empfänger mit zwei Zwischenfrequenzen: Eine hohe erste ZF, die die Spiegelfrequenz unterdrückt, und eine zweite tiefe ZF, die eine gute Trennschärfe erlaubt. }

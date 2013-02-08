@@ -41,6 +41,20 @@
 
 \usepackage{wrapfig}
 
+% Colored headers
+\usepackage{sectsty}
+
+\definecolor{seccol}{cmyk}{.8,0,0,.6}
+\allsectionsfont{\color{seccol}}
+
+%\usepackage{cclicenses}
+
+\newcommand{\imgsrc}[1]{ { \small \textit {#1} }}
+
+\definecolor{linkcol}{cmyk}{0,.6,.6,.6}
+\newcommand{\plink}[2]{ { \color{linkcol} \hyperref[#1]{#2}, Seite \pageref{#1} } }
+
+
 % Bash
 % Table LibO -> LaTeX
 % cat file.txt |sed -e 's/\t/ \& /g' |perl -p -e 's/$/ \\\\/'
