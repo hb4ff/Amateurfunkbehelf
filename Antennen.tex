@@ -51,5 +51,60 @@ Anders als herkömmliche Antennen arbeitet die Magnetantenne mit dem magnetische
 
 Ab einem Umfang von mehr als $\lambda∕10$ spricht man wieder von einer elektromagnetischen Antenne, da der elektrische Teil dann wieder zunimmt.
 
+\section{Antennenkabel}
+\subsection{Dämpfung}
+Dämpfung tritt sowohl im Kabel als auch bei Steckverbindungen auf. Der Verlust bei gecrimpten (geklemmten) Verbindungen ist etwas geringer als bei gelöteten.
+
+\subsection{Koaxialkabel}\label{koax}
+Koaxialkabel, oder kurz Koaxkabel, ist aufgebaut aus einem meist kupfernen Innenleiter, der von einem Aussenleiter umgeben ist; beide werden durch ein Dielektrikum getrennt. Der Wellenwiderstand der Leitung hängt vom Verhältnis der Leiterdurchmesser $\frac{D}{d}$ und der Permittivität $\epsilon_r$ des Dielektrikas ab.
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=6cm]{./png/Koax.png}
+ % Koax.png: 944x267 pixel, 300dpi, 7.98x2.26 cm, bb=0 0 226 64
+ \caption{Aufbau von Koaxialkabel. \textbf{1:} Isolation. \textbf{2:} Aussenleiter (Abschirmung). \textbf{3:} Dielektrikum (Isolator). \textbf{4:} Innenleiter (Seele). \imgsrc{Simon A. Eugster, 2013. GFDL 1.3, cc-by-sa 3.0}}
+ \label{fig:coax}
+\end{figure}
+
+Auch die Ausbreitungsgeschwindigkeit im Koaxialkabel ist von $\epsilon_r$ abhängig, sie beträgt:
+
+\[v = \epsilon_r^{-\frac{1}{2}} c\]
+
+Mit steigendem Aussendurchmesser $D$ sinkt die Dämpfung.
+
+
+In der folgenden Tabelle ist zu häufigen Kabeltypen der Wellenwiderstand $Z_W$ und der Verkürzungsfaktor $k_v$ angegeben.
+
+\vspace{1em}
+\begin{tabular}{lll rr}
+\bfseries Kabeltyp & \boldmath $Z_W$ & \boldmath $k_v$ & \multicolumn{2}{c}{\bfseries Dämpfung pro 100 m} \\
+                   &                            &                             & \small 10 MHz & \small 100 MHz \\
+\toprule \arrayrulecolor{rowsep}
+RG-8/U   & $50~\Omega$ &      & 1.8\,dB & 6.7\,dB \\ \midrule
+RG-58    & $50~\Omega$ & 0.66 & 4.1\,dB & 15.0\,dB \\ \midrule
+RG-59    & $75~\Omega$ & 0.66 & 3.6\,dB & 11.2\,dB \\ \midrule
+RG-213/U & $50~\Omega$ & 0.66 & 1.8\,dB & 6.7\,dB  \\ \midrule
+\end{tabular}
+\vspace{1em}
+
+
+\subsection{Bandleitung}
+Die Bandleitung (auch als \textit{Hühnerleiter} bekannt) dient zum Anschluss von symmetrischen Antennen wie Dipolen und Yagis. Sie besteht aus zwei eifachen Leitern mit Durchmesser $d$, die durch ein Isolationsmaterial mit Permittivität $\epsilon_r$ in einem konstanten Abstand $a$ parallel zueinander geführt werden. Der Vorteil hiervon ist, dass bei symmetrischen Antennen keine Impedanzanpassung notwendig ist, falls die Funkstation symmetrische Kabel unterstützt. Beim Übergang von Koaxkabel zu Bandleitung wird ein Balun benötigt.
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=6cm]{./png/Bandleitung.png}
+ % Bandleitung.png: 915x379 pixel, 300dpi, 7.75x3.21 cm, bb=0 0 220 91
+ \caption{\textbf{d:} Leiterdurchmesser. \textbf{a:} Abstand.}
+ \label{fig:bandleitung}
+\end{figure}
+
+
+Der Wellenwiderstand berechnet sich mit:
+
+\[Z_W = \frac{120~\Omega}{\sqrt{\epsilon_r}}\, \mathrm{acosh} \left ( \frac{a}{d} \right ) \]
+
+und ist häufig $450~\Omega$ oder $600~\Omega$.
+
 
 
