@@ -40,6 +40,7 @@
 \usepackage{varwidth}
 
 \usepackage{wrapfig}
+\usepackage{multicol}
 
 % Colored headers
 \usepackage{sectsty}
@@ -75,7 +76,6 @@
 \definecolor{rowsep}{gray}{.7}
 
 \newcommand{\link}[1]{::#1}
-\newcommand\HUGE{\@setfontsize\Huge{38}{47}}
 
 \newcommand{\lit}[1]{
 \noindent
@@ -101,10 +101,16 @@
  \vspace*{4cm}
  
  % Full page width; http://tex.stackexchange.com/questions/265/fonts-larger-than-huge
- \resizebox{\linewidth}{!}{Amateurfunkbehelf}
+% \resizebox{\linewidth}{!}{Amateurfunkbehelf}
+
+ {\textsc{\usefont{T1}{DejaVuSans-TLF}{b}{n}  \fontsize{28pt}{28pt}\selectfont Behelf}} \hfill \hspace{\stretch{1}} \\
+ {\vspace{8pt} \textsc{\usefont{T1}{DejaVuSans-TLF}{b}{n}  \fontsize{40pt}{40pt}\selectfont Amateurfunk}} \hfill \hspace{\stretch{1}}
+ %\HUGE{Behelf}\\ Amateurfunk
  
 \end{center}
 \end{titlepage}
+
+\input{Copyright}
 
 \input{TOC}
 
@@ -135,5 +141,7 @@
 \input{Bildnachweis}
 
 \input{Notizen}
+
+\input{GFDL}
 
 \end{document}

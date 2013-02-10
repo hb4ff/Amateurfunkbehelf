@@ -146,6 +146,11 @@ Nummer & Verbindet mit dem gewählten Node \\ \midrule
 \term{Ground wave}
 {\link{Bodenwelle, Seite 33}}
 
+\term{Histogramm}
+{Das Histogramm zeigt zu einem bestimmten Zeitpunkt die Frequenzanteile an. Beispiel: \plink{fig:amAnalysis}{Histogramm eines AM-Signals}. Auf der x-Achse liegt die Frequenz, auf der y-Achse die Signalstärke.
+
+Siehe auch \link{Spektrogramm}.}
+
 \term{Hochpass}
 {Filter aus Kondensatoren und Spulen, das hohe Frequenzen passieren lässt. Wird auch eingesetzt, um den 50-Hz-Brumm der Steckdose zu entfernen.}
 
@@ -308,7 +313,17 @@ den Griff zu bekommen).}
 {\plink{sec:raumwelle}{Raumwelle}}
 
 \term{Spektrogramm}
-{Ein Spektrogramm, beziehungsweise eine Spektrumanalyse, zeigt zu einer bestimmten Zeitspanne die Verteilung der Signalstärken im analysierten Frequenzband auf. Beispiel: \link{Grafik 5, Seite 36.}
+{Ein Spektrogramm zeigt den zeitlichen Verlauf des \link{Histogramms}. Die Signalstärke wird statt auf einer eigenen Achse mit der Farbe repräsentiert; so wird eine Achse frei für die Zeit.
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=10cm]{./png/baudline-Spectro-Histo.png}
+ % baudline-Spectro-Histo.png: 1070x310 pixel, 96dpi, 28.31x8.20 cm, bb=0 0 802 232
+ \caption{Spektrogramm auf 7\,MHz, Breite 10\,kHz. Es sind mehrere CW-Kanäle -- und bei höherer Vergrösserung die einzelnen Zeichen -- erkennbar. Darunter das Histogramm bei $t=228~s$.}
+ \label{fig:baudline}
+\end{figure}
+
+Das Spektrogramm eignet sich gut dafür, sich eine Übersicht über ein breites Frequenzband zu verschaffen.
 
 Berechnet wird das Spektrogramm mittels FFT \textit{(Fast Fourier Transformation)}. Frequenz und Zeit können dabei aufgrund der Unschärferelation nicht gleichzeitig exakt bestimmt werden.}
 
