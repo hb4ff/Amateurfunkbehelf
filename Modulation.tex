@@ -65,7 +65,7 @@ Im kommerziellen und auch militärischen Flugfunkverkehr im VHF- und UHF-Bereich
 
 Im CB-Funk wurde lange Zeit nur AM gesendet und das Kanalraster entsprechend in 10-kHz-Schritten ausgelegt. Heute wird da vorwiegend in FM im gleichen Kanalraster gearbeitet, oder aber auch in SSB mit Umschaltung LSB/USB. Im «illegalen» CB-Bereich oberhalb 27 405 kHz wird vorwiegend in USB mit 5-kHz-Raster gearbeitet.
 
-\subsection{FM}
+\subsection{FM}\label{sec:fm}
 Bei der Frequenzmodulation wird auf die Frequenz eingewirkt. Hier wird die Frequenz selber moduliert, was das Signal relativ unanfällig gegenüber Störungen der Amplitude (wie kurze Signalstärkenschwankungen) macht. Mit FM werden die meisten heutigen Radiosendungen moduliert, wie auch Funk auf VHF/UHF.
 
 \begin{figure}[h!]
@@ -86,8 +86,8 @@ Bei FM gewinnt immer das stärkere Signal, d. h. wenn zwei Stationen auf der s
 
 Auf HF kann man mit modernen Transceivern zwar FM senden, was prinzipiell nach dem FMG auch erlaubt wäre. In den Bandplänen, die von den Amateuren selbst ausgearbeitet wurden, ist das jedoch nicht vorgesehen. Einzig im 10m-Band oberhalb etwa 29.5 MHz wird exklusiv in FM gearbeitet, und es gibt dort auch Relais-Stationen mit 100 kHz Abstand zwischen RX und TX (z. B. Relais hb9hd auf 29 660 kHz TX bzw. 29 560 kHz RX).
 
-\subsection{SSB}
-Single Side Band; hier wird nur das untere (Lower Side Band, LSB) bzw. das obere Seitenband (Upper Side Band, USB) verwendet, was mit 2.7 kHz (\link{NF-Bandbreite}) weniger als der Hälfte der von AM benötigten Bandbreite entspricht. Da zudem auch der Träger herausgefiltert wird, benötigt man so nur einen Sechstel der Leistung, die für AM notwendig wäre.
+\subsection{SSB}\label{sec:ssb}
+Single Side Band; hier wird nur das untere (Lower Side Band, LSB) bzw. das obere Seitenband (Upper Side Band, USB) verwendet, was mit 2.7 kHz (\tlink{term:af}{AF-Bandbreite}) weniger als der Hälfte der von AM benötigten Bandbreite entspricht. Da zudem auch der Träger herausgefiltert wird, benötigt man so nur einen Sechstel der Leistung, die für AM notwendig wäre.
 
 Unterhalb von 10 MHz wird meist LSB verwendet, darüber USB.
 
@@ -105,8 +105,8 @@ Das \textit{Amplitude Shift Keying} (Amplitudenumtastung) wird für digitale Üb
 
 Die einfachste Art von ASK ist das \textit{On-Off Keying} (OOK), das unter anderem von LF-Zeitzeichensendern wie HBG auf 75 kHz eingesetzt wird.
 
-\subsection{FSK, AFSK, MFSK}
-\textit{Frequency Shift Keying} (Frequenzumtastung) ist «digitale» Frequenzmodulation. Bei FSK wird direkt die Frequenz des HF-Signals verändert, bei AFSK wird das Audiosignal umgetastet und auf HF aufmoduliert. In der Wasserfalldarstellung ergibt sich so ein Bild wie in \link{Grafik 12 (RTTY-Wasserfall)}.
+\subsection{FSK, AFSK, MFSK}\label{sec:fsk}
+\textit{Frequency Shift Keying} (Frequenzumtastung) ist «digitale» Frequenzmodulation. Bei FSK wird direkt die Frequenz des HF-Signals verändert, bei AFSK wird das Audiosignal umgetastet und auf HF aufmoduliert. In der Wasserfalldarstellung ergibt sich so ein Bild wie in Grafik \ref{fig:rttyWaterfall} (RTTY-Wasserfall).
 
 \begin{figure}[h!]
  \centering
@@ -125,8 +125,8 @@ Bei MFSK \textit{(Multiple Frequency Shift Keying)} wird zwischen mehreren versc
 \end{figure}
 
 
-\subsection{PM}
-Bei der Phasenmodulation wird auf die Phase eingewirkt. Eine vereinfachte Form ist das Binary Phase Shift Keying (BPSK), bei dem zwischen zwei Zuständen (0 und 1) gewechselt wird. Beim Wechsel wird die Phase um 180° gedreht, d. h. die Sinuskurve wird um eine halbe Schwingung ($\pi$) verschoben. Phasenmodulation wird für analoge Übertragungen kaum eingesetzt, eignet sich für Digitales sehr gut.
+\subsection{PM}\label{sec:pm}
+Bei der Phasenmodulation \textit{(Phase Modulation)} wird auf die Phase eingewirkt. Eine vereinfachte Form ist das Binary Phase Shift Keying (BPSK), bei dem zwischen zwei Zuständen (0 und 1) gewechselt wird. Beim Wechsel wird die Phase um 180° gedreht, d. h. die Sinuskurve wird um eine halbe Schwingung ($\pi$) verschoben. Phasenmodulation wird für analoge Übertragungen kaum eingesetzt, eignet sich für Digitales sehr gut.
 
 \begin{figure}[h!]
  \centering
@@ -142,4 +142,4 @@ Bei der Phasenmodulation wird auf die Phase eingewirkt. Eine vereinfachte Form i
  \label{fig:psk}
 \end{figure}
 
-Beim Phasenwechsel (in \link{Grafik 10 oben} um 180°) entsteht während dem Phasenwechsel für kurze Zeit eine höhere Frequenz (und somit eine höhere Bandbreite), da die beiden Punkte verbunden werden müssen (1). Eine senkrechte Verbindung würde aber zu einer sehr hohen Frequenz führen (2). Möglich wäre zum Beispiel die Kurve 3, die sich durch den Widerstand von Kabel etc. (steigt mit höherer Frequenz) automatisch ergibt. Bei PSK31 wird das Signal beim Übergang zusätzlich noch abgeschwächt.
+Beim Phasenwechsel (in Grafik \ref{fig:pm} um 180°) entsteht während dem Phasenwechsel für kurze Zeit eine höhere Frequenz (und somit eine höhere Bandbreite), da die beiden Punkte verbunden werden müssen (1). Eine senkrechte Verbindung würde aber zu einer sehr hohen Frequenz führen (2). Möglich wäre zum Beispiel die Kurve 3, die sich durch den Widerstand von Kabel etc. (steigt mit höherer Frequenz) automatisch ergibt. Bei PSK31 wird das Signal beim Übergang zusätzlich noch abgeschwächt.

@@ -7,7 +7,7 @@
 \end{addmargin}}
 
 
-\term{AF}
+\term{AF\phantomsection\label{term:af}}
 {Audio Frequency, Töne im hörbaren Bereich. Auch NF (Niederfrequenz) genannt. 
 
 Im Amateurfunk werden oftmals nur Frequenzen von 300 bis 3000 Hz übertragen, da dies für die Verständigung ausreichend ist und nicht übermässig viel Platz im Spektrum verschwendet. Die Bandbreite beträgt für ein solches Sprachsignal auf SSB $3000~\mathrm{Hz} - 300~\mathrm{Hz} = 2700~\mathrm{Hz}$.
@@ -35,7 +35,7 @@ Software: BeaconSee}
 \term{Beam}
 {Anderer Name für eine \plink{sec:yagi}{Yagi-Antenne}.}
 
-\term{Betriebsart}
+\term{Betriebsart\phantomsection\label{term:betriebsart}}
 {Die Betriebsart (also die Art, wie man Funkbetrieb macht) beinhaltet verschiedene Eigenschaften wie Verkehrsart (Simplex, Duplex, …), Modulation (AM, FM, …) und Übertragungsverfahren.}
 
 \term{BFO \phantomsection \label{term:bfo}}
@@ -74,16 +74,16 @@ Das ist auch der Grund, warum beim Scannen eines CW-Bandes die einen Signale hö
 \term{CB}
 {Abkürzung für \textit{Citizen Band}. Auf diesem HF-Band um 27 MHz kann, ähnlich wie bei PMR, ohne Lizenz gefunkt werden.}
 
-\term{CTCSS}
-{CTCSS \textit{(Continious Tone Code Squelch System)} moduliert einen NF-Ton unter 300 Hz (\link{Subaudio}-Ton) mit dem FM-Träger. CTCSS wird gerne von Relais benutzt, da damit ungewollte Aktivierungen, z. B. von Radars oder durch Nebenaussendungen anderer Stationen, verhindert werden können: Es öffnet nur, wenn der richtige Ton moduliert wird.
+\term{CTCSS\phantomsection\label{term:ctcss}}
+{CTCSS \textit{(Continious Tone Code Squelch System)} moduliert einen NF-Ton unter 300 Hz (\tlink{term:subaudio}{Subaudio-Ton}) mit dem FM-Träger. CTCSS wird gerne von Relais benutzt, da damit ungewollte Aktivierungen, z. B. von Radars oder durch Nebenaussendungen anderer Stationen, verhindert werden können: Es öffnet nur, wenn der richtige Ton moduliert wird.
 
 Insgesamt werden 50 verschiedene Töne von 67 bis 254.1 Hz verwendet.}
 
-\term{Dämpfung}
+\term{Dämpfung\phantomsection\label{term:daempfung}}
 {Die Dämpfung bzw. Verstärkung (Kabel, Antenne, …) wird in Dezibel (dB) angegeben. Für Koaxialkabel gilt der Wert jeweils für 100 m.}
 
 \term{DCS}
-{DCS (Digital Code Squelch) funktioniert ähnlich wie \link{CTCSS}: Der Empfänger wird geöffnet, sobald das richtige Signal am HF-Eingang liegt. DCS arbeitet jedoch mit einem FSK-Stream im Subaudio-Bereich, mit dem Daten (bzw. bestimmte Codes) übertragen werden. Das System ist so weniger störanfällig.}
+{DCS (Digital Code Squelch) funktioniert ähnlich wie \tlink{term:ctcss}{CTCSS}: Der Empfänger wird geöffnet, sobald das richtige Signal am HF-Eingang liegt. DCS arbeitet jedoch mit einem FSK-Stream im Subaudio-Bereich, mit dem Daten (bzw. bestimmte Codes) übertragen werden. Das System ist so weniger störanfällig.}
 
 \term{Dezibel}
 {Es können sowohl relative Angaben zur Verstärkung bzw. Dämpfung als auch absolute bei Pegeln verwendet werden. dB-Werte sind addierbar, was die Errechnung des Gesamtgewinnes aus Antenne, Kabel- und Steckerverlust vereinfacht.
@@ -97,19 +97,20 @@ Für Spannungspegel:
 
 Eine Verstärkung der Leistung um 3 dB bedeutet eine Leistungsverdoppelung. Zwei Antennen mit je 3 dB Gewinn erbringen zusammen einen Gewinn von $3 + 3 = 6~\mathrm{dB}$ (also das Vierfache).
 
-Nähere Beschreibung in der \link{Formelsammlung}.}
+Nähere Beschreibung in der Formelsammlung.}
 
 \term{DTMF}
-{DTMF (Dual Tone Multiple Frequency), auch MFV – Mehrfrequenzwahlverfahren – genannt, wird zum aktivieren von Relais und für die Auswahl von \link{Echolink}-Repeatern verwendet. Die meisten EL-Relais verlangen zuerst einen \textbf{*}, um EL zu aktivieren, bevor die Node-Nummer eingegeben wird. Die Raute (\textbf{\#}) beendet die Verbindung wieder.}
+{DTMF (Dual Tone Multiple Frequency), auch MFV – Mehrfrequenzwahlverfahren – genannt, wird zum aktivieren von Relais und für die Auswahl von \tlink{term:echolink}{Echolink}-Repeatern verwendet. Die meisten EL-Relais verlangen zuerst einen \textbf{*}, um EL zu aktivieren, bevor die Node-Nummer eingegeben wird. Die Raute (\textbf{\#}) beendet die Verbindung wieder.}
 
 \term{Dipol}
 {Ein Antennendraht der Länge $\lambda/2$. Siehe \plink{sec:dipol}{Dipol}.}
 
-\term{Doppelsuper}
+\term{Doppelsuper\phantomsection\label{term:doppelsuper}}
 {Empfänger mit zwei Zwischenfrequenzen: Eine hohe erste ZF, die die Spiegelfrequenz unterdrückt, und eine zweite tiefe ZF, die eine gute Trennschärfe erlaubt. }
 
-\term{Echolink}
-{\href{http://www.echolink.org}{www.echolink.org} – Webauftritt von Echolink
+\term{Echolink\phantomsection\label{term:echolink}}
+{
+\lit{\href{http://www.echolink.org}{www.echolink.org} – Webauftritt von Echolink}
 
 Mit Echolink lassen sich Funkverbindungen zwischen zwei Benutzern «übers Internet» erstellen. Auf das Echolink-System kann man entweder vom PC aus\footnote{Software ist momentan nur für Windows erhältlich.} (VoIP-ähnlich) oder über ein Relais, das Echolink (EL) unterstützt, zugreifen. 
 
@@ -135,21 +136,21 @@ Nummer & Verbindet mit dem gewählten Node \\ \midrule
 
 
 \term{FM}
-{\link{Frequenzmodulation, S. 37}}
+{Siehe \plink{sec:fm}{Frequenzmodulation}.}
 
 \term{FRS}
 {Family Radio Service; Amerikanisches PMR.}
 
-\term{Fuchsjagd}
-{Amateurfunkpeilen. Ähnlich wie bei einem OL müssen Sender, die auf einer bestimmten Frequenz senden, gefunden werden. Durch mehrere Peilungen können sie geortet und auf einer Karte eingetragen werden. \link{Formelsammlung}}
+\term{Fuchsjagd\phantomsection\label{term:fuchsjagd}}
+{Amateurfunkpeilen. Ähnlich wie bei einem OL müssen Sender, die auf einer bestimmten Frequenz senden, gefunden werden. Durch mehrere Peilungen können sie geortet und auf einer Karte eingetragen werden. (Siehe Formelsammlung.)}
 
 \term{Ground wave}
-{Siehe \link{Bodenwelle, Seite 33}.}
+{Siehe \plink{sec:bodenwelle}{Bodenwelle}.}
 
-\term{Histogramm}
+\term{Histogramm\phantomsection\label{term:histogramm}}
 {Das Histogramm zeigt zu einem bestimmten Zeitpunkt die Frequenzanteile an. Beispiel: \plink{fig:amAnalysis}{Histogramm eines AM-Signals}. Auf der x-Achse liegt die Frequenz, auf der y-Achse die Signalstärke.
 
-Siehe auch \link{Spektrogramm}.}
+Siehe auch \tlink{term:spektrogramm}{Spektrogramm}.}
 
 \term{Hochpass}
 {Filter aus Kondensatoren und Spulen, das hohe Frequenzen passieren lässt. Wird auch eingesetzt, um den 50-Hz-Brumm der Steckdose zu entfernen.}
@@ -160,7 +161,7 @@ Siehe auch \link{Spektrogramm}.}
 \term{Koax}
 {Koaxialkabel (siehe \plink{koax}{Koaxialkabel}) wird für die Übertragung der Signale zwischen Antenne und Empfänger verwendet. Die gebräuchlichsten Arten sind RG58 (5.8 mm Durchmesser) und RG213 (10.3 mm Durchmesser).
 
-Für Amateurfunk verwendet man eigentlich nur 50-$\Omega$-Kabel. 75-Ohmiges wird im Fernsehbereich eingesetzt. Bei höheren Frequenzen wird aufgrund des \link{Skin-Effektes} dickeres Kabel (RG213) eingesetzt.
+Für Amateurfunk verwendet man eigentlich nur 50-$\Omega$-Kabel. 75-Ohmiges wird im Fernsehbereich eingesetzt. Bei höheren Frequenzen wird aufgrund des \tlink{term:skineffekt}{Skin-Effektes} dickeres Kabel (RG213) eingesetzt.
 }
 
 \term{Koax-Steckverbindungen}
@@ -187,13 +188,10 @@ Für Amateurfunk verwendet man eigentlich nur 50-$\Omega$-Kabel. 75-Ohmiges wird
 
 }
 
-\term{Locator}
-{\link{Maidenhead-Locator}}
-
 \term{LUF}
 {Die Lowest Usable Frequency ist die tiefste Frequenz, die zwischen zwei Punkten genutzt werden kann. Sie ist von der Ionisierung der D- und E-Schicht und daher auch von der Tageszeit abhängig.}
 
-\term{Maidenhead-Locator}
+\term{Maidenhead-Locator\phantomsection\label{term:maidenhead}}
 {Im Amateurfunk wird für die Positionsangabe ein eigenes System verwendet. Die Welt wird in $18\times 18$ Grösstfelder (\textit{Fields}, A…R), $10\times 10$ Grossfelder (\textit{Squares}, 0…9) und $24\times 24$ Kleinfelder (\textit{Subsquares}, a…x) unterteilt, feinere Unterteilungen sind möglich. Das erste Zeichen gibt jeweils die Länge an, das zweite die Breite. Beispiel: JN47qh
 
 \begin{figure}[h!]
@@ -208,7 +206,7 @@ Für Amateurfunk verwendet man eigentlich nur 50-$\Omega$-Kabel. 75-Ohmiges wird
 \term{Modulationsindex}
 {Verhältnis von Hubfrequenz zur maximalen Niederfrequenz}
 
-\term{MUF}
+\term{MUF\phantomsection\label{term:muf}}
 {Die Maximal Usable Frequency liegt wenig unter der höchsten Frequenz, die an der F-Schicht der Ionosphäre noch reflektiert wird. Tagsüber ist sie höher als bei Nacht. Ausserdem ist sie abhängig vom Abstrahlwinkel: Bei sehr guten Bedingungen und einem Abstrahlwinkel um 0° können Frequenzen von bis zu 70 MHz reflektiert werden.
 
 Sonden, die die MUF messen, senden ein Signal zur Erde, das dann reflektiert wird. Da es senkrecht auf die Ionosphäre auftrifft, ist die so erhaltene MUF niedriger. Die 0°-MUF kann daraus hochgerechnet werden – für das $F_2$-Band beträgt sie das 2.5- bis 3.5-fache.}
@@ -217,9 +215,9 @@ Sonden, die die MUF messen, senden ein Signal zur Erde, das dann reflektiert wir
 {Beim Senden kann es geschehen, dass ein Teil der Energie ins Stromnetz einströmt und so zu Störungen anderer Geräte führt. Dies kann verhindert werden, indem man das Stromkabel um einen Ferritring wickelt. Grundsätzlich gilt: Je mehr Windungen, desto besser, aber ein Viertel des Ferrites sollte frei bleiben.}
 
 \term{NF}
-{\link{AF}}
+{Siehe \tlink{term:af}{AF}.}
 
-\term{Notchfilter}
+\term{Notchfilter\phantomsection\label{term:notchfilter}}
 {Ein Notchfilter (Saugkreis) filtert eine HF-Frequenz heraus.
 
 \begin{figure}[h!]
@@ -248,10 +246,10 @@ Ein einfacher Notchfilter lässt sich mit einer Spule und einem Kondensator real
 {Der Öffnungswinkel einer Antenne ist der Winkelabstand zwischen zwei Punkten, bei denen der Gewinn um 3 dB abgefallen ist. Ein Yagi hat einen kleineren Öffnungswinkel als ein Dipol.}
 
 \term{Ortung}
-{Positionsbestimmung eines Signals durch zwei oder mehr \link{Peilungen}.}
+{Positionsbestimmung eines Signals durch zwei oder mehr \tlink{term:peilung}{Peilungen}.}
 
-\term{Peilung}
-{Richtungsbestimmung eines Signals. Für \link{Fuchsjagden} wird dazu meist eine Loop verwendet, für HF werden stationäre Peiler mit mehreren GPs, in einem Kreis angeordnet, eingesetzt.}
+\term{Peilung\phantomsection\label{term:peilung}}
+{Richtungsbestimmung eines Signals. Für \tlink{term:fuchsjagd}{Fuchsjagden} wird dazu meist eine Loop verwendet, für HF werden stationäre Peiler mit mehreren GPs, in einem Kreis angeordnet, eingesetzt.}
 
 \term{Pile-up}
 {Ein Effekt, der bei speziellen Stationen oder bei Contests auftritt, wenn mehrere Stationen mit einer bestimmten eine Verbindung herstellen möchten.}
@@ -279,8 +277,8 @@ Auf den PMR-Frequenzen (446–446.1 MHz) dürfen alle geprüften PMR-Handfunkger
 
 Nicht zu verwechseln mit QRM \textit{(man-made noise)}, Störungen, die etwa durch ein schlechtes Netzteil (Brummton) oder diverse elektrische Geräte hervorgerufen werden können.}
 
-\term{Raumwelle}
-{\link{Raumwelle, Seite 33}}
+\term{Raumwelle\phantomsection\label{term:raumwelle}}
+{Elektromagnetische Wellen, die an der Ionosphäre reflektiert werden. Siehe \plink{sec:raumwelle}{Raumwelle}.}
 
 \term{Rauschsperre}
 {Squelch}
@@ -291,7 +289,7 @@ Nicht zu verwechseln mit QRM \textit{(man-made noise)}, Störungen, die etwa dur
 \term{RG-58}
 {Koaxialkabeltyp, der gerne für HF eingesetzt wird. Der Wellenwiderstand beträgt $58~\Omega$ und der Verkürzungsfaktor 0.66.}
 
-\term{RIT}
+\term{RIT\phantomsection\label{term:rit}}
 {Das \textit{Receiver Incremental Tuning} (auch \textit{Clarifier} genannt) wird eingesetzt, wenn eine empfangene Station keinen stabilen Sender hat und sich dessen Frequenz langsam verändert (die von ihm empfangene Frequenz jedoch nicht!). Beim RIT wird nur die Eingangsfrequenz verstellt; so ist es möglich, auf der selben Frequenz zu senden, aber etwas daneben zu hören.
 
 RIT wird oft auch von raren DX-peditions gebraucht, welche nach dem CQ-Ruf z. B. «up 2» geben (das heisst, sie wollen, dass man sie 2 kHz weiter oben ruft, um das Pile-up besser in
@@ -304,16 +302,16 @@ den Griff zu bekommen).}
 {Kommt von \textit{atmospherics}. \plink{sec:blitze}{Blitze}}
 
 \term{Signal-Rausch-Abstand}
-{SNR. \link{Formelsammlung}}
+{SNR. Siehe Formelsammlung.}
 
-\term{Skin-Effekt}
+\term{Skin-Effekt\phantomsection\label{term:skineffekt}}
 {Ein Leiter (zum Beispiel ein Kupferkabel) zeigt bei Gleichstrom eine gleichmässige Stromverteilung. Bei Wechselstrom werden die Elektronen aufgrund des Magnetfeldes, das durch die Mitte des Leiters geht, nach aussen verdrängt. So steigt der Widerstand etwa bei 10 MHz bereits um das 10-fache an (Kupferdraht, $1~\mathrm{mm}^2$). Abhilfe schafft Litzendraht (mehrere feine Drähte haben leicht bessere Eigenschhaften) oder, noch besser, ein dickerer Leiter.}
 
 \term{Sky wave}
 {\plink{sec:raumwelle}{Raumwelle}}
 
-\term{Spektrogramm}
-{Ein Spektrogramm zeigt den zeitlichen Verlauf des \link{Histogramms}. Die Signalstärke wird statt auf einer eigenen Achse mit der Farbe repräsentiert; so wird eine Achse frei für die Zeit.
+\term{Spektrogramm\phantomsection\label{term:spektrogramm}}
+{Ein Spektrogramm zeigt den zeitlichen Verlauf des \tlink{term:histogramm}{Histogramms}. Die Signalstärke wird statt auf einer eigenen Achse mit der Farbe repräsentiert; so wird eine Achse frei für die Zeit.
 
 \begin{figure}[h!]
  \centering
@@ -323,12 +321,12 @@ den Griff zu bekommen).}
  \label{fig:baudline}
 \end{figure}
 
-Das Spektrogramm eignet sich gut dafür, sich eine Übersicht über ein breites Frequenzband zu verschaffen.
+Das Spektrogramm eignet sich gut dafür, sich eine Übersicht über ein breites Frequenzband zu verschaffen. So findet es speziell bei Programmen für digitale Übertragungsverfahren wie PSK31 Verwendung, da so einzelne PSK-Signale schnell erkannt werden können.
 
 Berechnet wird das Spektrogramm mittels FFT \textit{(Fast Fourier Transformation)}. Frequenz und Zeit können dabei aufgrund der Unschärferelation nicht gleichzeitig exakt bestimmt werden.}
 
 \term{Sperrkreis}
-{Der Sperrkreis (Parallelschwingkreis) hat eine andere Dämpfungskurve als der \link{Notchfilter}. Sie werden oft zusammen verwendet.
+{Der Sperrkreis (Parallelschwingkreis) hat eine andere Dämpfungskurve als der \tlink{term:notchfilter}{Notchfilter}. Sie werden oft zusammen verwendet.
 
 \begin{figure}[h!]
  \centering
@@ -343,15 +341,15 @@ Berechnet wird das Spektrogramm mittels FFT \textit{(Fast Fourier Transformation
 \term{Squelch}
 {Der Squelch (Rauschsperre) sperrt den NF-Verstärker, solange das Signal im ZF-Verstärker einen bestimmten, einstellbaren Wert nicht überschreitet. So ist der Empfang etwas angenehmer (speziell für FM), da bei Sendepausen kein Rauschen hörbar ist, und bei Handfunkgeräten wird die Betriebsdauer verlängert. Bei schwachen Signalen, die unter dem Rauschpegel liegen, funktioniert der Squelch nicht (bzw. sperrt immer).
 
-Bei oft benutzten Relais kann man zudem mit einem \link{Subaudio-Ton} arbeiten, der am Gerät eingestellt wird. Der Empfänger verstärkt dann nur empfangene Aussendungen, die diesen CTCSS-Ton enthalten \textit{(Tone Squelch)}. Die Frequenzen dieser «privaten» CTCSS-Töne werden untereinander ausgetauscht.
+Bei oft benutzten Relais kann man zudem mit einem \tlink{term:subaudio}{Subaudio-Ton} arbeiten, der am Gerät eingestellt wird. Der Empfänger verstärkt dann nur empfangene Aussendungen, die diesen CTCSS-Ton enthalten \textit{(Tone Squelch)}. Die Frequenzen dieser «privaten» CTCSS-Töne werden untereinander ausgetauscht.
 
 Die Rauschsperre findet vor allem bei FM Einsatz, da das Rauschen lauter als das Sprachsignal ist. Bei AM wird sie zum Sperren von Störungen verwendet.}
 
-\term{SSB}
-{\link{SSB, S. 37}}
+\term{SSB\phantomsection\label{term:ssb}}
+{Single-Sideband, die eine Seite (ohne Träger) eines AM-Signals. (\textit{USB} und \textit{LSB} für \textit{Upper/Lower Sideband}.) Siehe \plink{sec:ssb}{SSB}.}
 
-\term{Subaudio-Ton}
-{Ein Ton, dessen Frequenz unterhalb der hörbaren Frequenzen (\link{AF}) liegt. Er kann etwa zur Datenübertragung mitgesendet werden.}
+\term{Subaudio-Ton\phantomsection\label{term:subaudio}}
+{Ein Ton, dessen Frequenz unterhalb der hörbaren Frequenzen (\tlink{term:af}{AF}) liegt. Er kann etwa zur Datenübertragung mitgesendet werden.}
 
 \term{SWR}
 {Stehwellenverhältnis, auch VSWR für Vorwärts-SWR. Je höher das SWR, desto mehr Leistung wird von der Antenne zurückgeworfen und geht als Wärme verloren. Es wird berechnet, indem man die maximale durch die minimale Leistung teilt:
@@ -360,7 +358,7 @@ Die Rauschsperre findet vor allem bei FM Einsatz, da das Rauschen lauter als das
 }
 
 \term{Tiefpass}
-{Wie ein Hochpass, lässt aber tiefe Frequenzen passieren. \link{Formelsammlung}}
+{Wie ein Hochpass, lässt aber tiefe Frequenzen passieren. Siehe Formelsammlung.}
 
 \term{Tone Call}
 {Auch \textit{T-Call} genannt. Ein Ton mit einer Frequenz von 1750 Hz, der zum Aktivieren von Relais verwendet werden kann.}
@@ -372,7 +370,7 @@ Die Rauschsperre findet vor allem bei FM Einsatz, da das Rauschen lauter als das
 {Ein Gerät, das die Ausgangsimpedanz des Senders an die Impedanz der Antenne anpasst, um so eine optimale Leistungsübertragung zu ermöglichen.}
 
 \term{Überlagerungsempfänger}
-{Auch \textit{Superhet} (für \textit{Superheterodynempfänger}) gennant. In diesen Empfängern wird die Eingangsfrequenz zuerst mit dem (anpassbaren) Lokaloszillator (LO) auf eine fixe \link{Zwischenfrequenz} gemischt -- für HF meist 455\,kHz oder 470\,kHz, für VHF 10.7\,MHz~--, wo das Signal dann gefiltert werden kann. Der Vorteil ist, dass für die fixe Zwischenfrequenz fixe Schaltkreise für Verstärkung und Filterung gebaut und verwendet werden können.
+{Auch \textit{Superhet} (für \textit{Superheterodynempfänger}) gennant. In diesen Empfängern wird die Eingangsfrequenz zuerst mit dem (anpassbaren) Lokaloszillator (LO) auf eine fixe \tlink{term:zwischenfrequenz}{Zwischenfrequenz} gemischt -- für HF meist 455\,kHz oder 470\,kHz, für VHF 10.7\,MHz~--, wo das Signal dann gefiltert werden kann. Der Vorteil ist, dass für die fixe Zwischenfrequenz fixe Schaltkreise für Verstärkung und Filterung gebaut und verwendet werden können.
 
 \begin{figure}[h!]
  \centering
@@ -387,7 +385,7 @@ Die Zwischenfrequenz beträgt $f_\mathrm{ZF} = \left| f_\mathrm{LO} - f_e \right
 }
 
 \term{Übertragungsverfahren}
-{Bezeichnet die Art, wie etwas übertragen wird. Als Beispiel: CW, SSTV, PSK31. \link{Übertragungsverfahren, Seite 40} und \link{Betriebsart}}
+{Bezeichnet die Art, wie etwas übertragen wird. Als Beispiel: CW, SSTV, PSK31. Siehe \plink{sec:uebertr}{Übertragungsverfahren} und \tlink{term:betriebsart}{Betriebsart}.}
 
 \term{UTC}
 {\textit{Universal Time Coordinated,} Weltzeit, ohne Sommer- und Winterzeit. Siehe \plink{sec:utc}{UTC?}.}
@@ -397,20 +395,21 @@ Die Zwischenfrequenz beträgt $f_\mathrm{ZF} = \left| f_\mathrm{LO} - f_e \right
 }
 
 \term{Verstärkung}
-{\link{Dämpfung}}
+{\tlink{term:daempfung}{Dämpfung}}
 
 \term{Wasserfalldiagramm}
-{Der Wasserfall ist eine erweiterte Form des Spektrogramms. Die Signalstärke wird farblich hervorgehoben, dafür wird die dadurch frei gewordene Achse als Zeitachse verwendet. So ist es möglich, Frequenz, Zeit und Signalstärke gleichzeitig in einer zweidimensionalen Grafik darzustellen.  Beispiel: \link{Grafik 12, Seite 40}. \link{Spektrogramm}.
+{Synonym für \tlink{term:spektrogramm}{Spektrogramm}.}
 
-Heute findet der Wasserfall speziell bei digitalen Übertragungsverfahren wie PSK31 Verwendung, da so einzelne PSK-Signale schnell erkannt werden können.}
+\term{Whistler\phantomsection\label{term:whistler}}
+{Von Blitzen erzeugtes Störgeräusch; Siehe \plink{sec:blitze}{Blitze}.}
 
 \term{Yagi}
-{Eine \link{Yagi (S. 43)} ist eine Richtantenne.}
+{Eine \plink{sec:yagi}{Yagi} ist eine Richtantenne.}
 
-\term{Zwischenfrequenz}
+\term{Zwischenfrequenz\phantomsection\label{term:zwischenfrequenz}}
 {Die Zwischenfrequenz (ZF) ist der Abstand von der Oszillatorfrequenz (Lokaloszillator, LO) zur Eingangsfrequenz bzw. von der Oszillator- zur Spiegel­fre­quenz.
 
 \[ f_\mathrm{\,ZF} = \left|\, f_\mathrm{\:LO} - f_e \right| \]
 
-Professionelle Geräte verwenden teils zwei Zwischenfrequenzen, siehe \link{Doppelsuper}.
+Professionelle Geräte verwenden teils zwei Zwischenfrequenzen, siehe \tlink{term:doppelsuper}{Doppelsuper}.
 }
