@@ -38,7 +38,7 @@ Software: BeaconSee}
 \term{Betriebsart}
 {Die Betriebsart (also die Art, wie man Funkbetrieb macht) beinhaltet verschiedene Eigenschaften wie Verkehrsart (Simplex, Duplex, …), Modulation (AM, FM, …) und Übertragungsverfahren.}
 
-\term{BFO}
+\term{BFO \phantomsection \label{term:bfo}}
 {Der \textit{Beat Frequency Oscillator} generiert eine Trägerfrequenz, die bei Bedarf der ZF beigemischt wird. Beispielsweise wird dies bei CW oder SSB benötigt.
 
 Im folgenden Beispiel wird ein CW-Signal dargestellt. 
@@ -69,7 +69,7 @@ $f_d = |f_{\mathrm{BFO}}-f_{\mathrm{ZF}}|$ lässt sich beim Empfänger meist dir
 Das ist auch der Grund, warum beim Scannen eines CW-Bandes die einen Signale höher, die andern tiefer werden. Beim Empfang eines breiten Spektrums haben zwei Signale, die $2\times \mathrm{f_d}$ auseinander liegen, die selbe AF-Tonhöhe! Darum verschwinden einige Signale beim verringern der Bandbreite, da sie zwar die eingestellte fd-Tonhöhe haben, aber um die zweifache fd-Frequenz weiter unten liegen. Sobald die Bandbreite unter $2\times \mathrm{f_d}$  liegt, hat man diese Probleme nicht mehr.}
 
 \term{Bodenwelle}
-{Der Teil einer elektromagnetischen Welle, der sich über den Boden ausbreitet. Siehe \plink{sec:bodenwelle}{Bodenwelle}}
+{Der Teil einer elektromagnetischen Welle, der sich über den Boden ausbreitet. Siehe \plink{sec:bodenwelle}{Bodenwelle}.}
 
 \term{CB}
 {Abkürzung für \textit{Citizen Band}. Auf diesem HF-Band um 27 MHz kann, ähnlich wie bei PMR, ohne Lizenz gefunkt werden.}
@@ -144,7 +144,7 @@ Nummer & Verbindet mit dem gewählten Node \\ \midrule
 {Amateurfunkpeilen. Ähnlich wie bei einem OL müssen Sender, die auf einer bestimmten Frequenz senden, gefunden werden. Durch mehrere Peilungen können sie geortet und auf einer Karte eingetragen werden. \link{Formelsammlung}}
 
 \term{Ground wave}
-{\link{Bodenwelle, Seite 33}}
+{Siehe \link{Bodenwelle, Seite 33}.}
 
 \term{Histogramm}
 {Das Histogramm zeigt zu einem bestimmten Zeitpunkt die Frequenzanteile an. Beispiel: \plink{fig:amAnalysis}{Histogramm eines AM-Signals}. Auf der x-Achse liegt die Frequenz, auf der y-Achse die Signalstärke.
@@ -199,7 +199,7 @@ Für Amateurfunk verwendet man eigentlich nur 50-$\Omega$-Kabel. 75-Ohmiges wird
 \begin{figure}[h!]
  \centering
  \includegraphics[width=6cm]{./png/Maidenhead_QTH-Locator_erklaert.png}
- \caption{Aufbau des Maidenhead-Locators}
+ \caption{Aufbau des Maidenhead-Locators. \imgsrc{Oona, 2007; \href{http://commons.wikimedia.org/wiki/File:Maidenhead\_QTH-Locator\_erklärt.svg}{http://commons.wikimedia.org/wiki/File:Maidenhead\_QTH-Locator\_erklärt.svg}. PD.}}
  \label{fig:maidenhead}
 \end{figure}
 
@@ -319,7 +319,7 @@ den Griff zu bekommen).}
  \centering
  \includegraphics[width=10cm]{./png/baudline-Spectro-Histo.png}
  % baudline-Spectro-Histo.png: 1070x310 pixel, 96dpi, 28.31x8.20 cm, bb=0 0 802 232
- \caption{Spektrogramm auf 7\,MHz, Breite 10\,kHz. Es sind mehrere CW-Kanäle -- und bei höherer Vergrösserung die einzelnen Zeichen -- erkennbar. Darunter das Histogramm bei $t=228~s$.}
+ \caption{Spektrogramm auf 7\,MHz, Breite 10\,kHz. Es sind mehrere CW-Kanäle -- und bei höherer Vergrösserung die einzelnen Zeichen -- erkennbar. Darunter das Histogramm bei $t=228~s$. (Screenshot aus Baudline)}
  \label{fig:baudline}
 \end{figure}
 
@@ -371,11 +371,26 @@ Die Rauschsperre findet vor allem bei FM Einsatz, da das Rauschen lauter als das
 \term{Tuner}
 {Ein Gerät, das die Ausgangsimpedanz des Senders an die Impedanz der Antenne anpasst, um so eine optimale Leistungsübertragung zu ermöglichen.}
 
+\term{Überlagerungsempfänger}
+{Auch \textit{Superhet} (für \textit{Superheterodynempfänger}) gennant. In diesen Empfängern wird die Eingangsfrequenz zuerst mit dem (anpassbaren) Lokaloszillator (LO) auf eine fixe \link{Zwischenfrequenz} gemischt -- für HF meist 455\,kHz oder 470\,kHz, für VHF 10.7\,MHz~--, wo das Signal dann gefiltert werden kann. Der Vorteil ist, dass für die fixe Zwischenfrequenz fixe Schaltkreise für Verstärkung und Filterung gebaut und verwendet werden können.
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[width=10cm]{./png/Superhet.png}
+ % Superhet.png: 1587x608 pixel, 300dpi, 13.42x5.14 cm, bb=0 0 380 146
+ \caption{Blockschaltbild eines Überlagerungsempfängers.}
+ \label{fig:superhet}
+\end{figure}
+
+Die Zwischenfrequenz beträgt $f_\mathrm{ZF} = \left| f_\mathrm{LO} - f_e \right|$. Da das Vorzeichen wegfällt, wird also ohne Eingangsfilter, wie in Grafik \ref{fig:superhet} dargestellt, auch der Teil des Spektrums, der auf der «anderen Seite» der Oszillatorfrequenz liegt, auf die Zwischenfrequenz abgebildet. Dieser Teil wird als Spiegelfrequenz bezeichnet. (Siehe auch \plink{term:bfo}{BFO}.)
+
+}
+
 \term{Übertragungsverfahren}
 {Bezeichnet die Art, wie etwas übertragen wird. Als Beispiel: CW, SSTV, PSK31. \link{Übertragungsverfahren, Seite 40} und \link{Betriebsart}}
 
 \term{UTC}
-{\link{UTC, Seite 10}}
+{\textit{Universal Time Coordinated,} Weltzeit, ohne Sommer- und Winterzeit. Siehe \plink{sec:utc}{UTC?}.}
 
 \term{Verkürzungsfaktor}
 {Elektromagnetische Signale bewegen sich nur im luftleeren Raum mit Lichtgeschwindigkeit fort. In anderen Materialien (speziell Antennendraht und -Kabel) ist die Fortbewegungsgeschwindigkeit niedriger, daher muss zum Beispiel die Drahtlänge eines 80-m-Dipols um einen Meter verkürzt werden.
@@ -393,4 +408,9 @@ Heute findet der Wasserfall speziell bei digitalen Übertragungsverfahren wie PS
 {Eine \link{Yagi (S. 43)} ist eine Richtantenne.}
 
 \term{Zwischenfrequenz}
-{Die Zwischenfrequenz (ZF) ist der Abstand von der Oszillator- zur Eingangsfrequenz bzw. von der Oszillator- zur Spiegel­fre­quenz.}
+{Die Zwischenfrequenz (ZF) ist der Abstand von der Oszillatorfrequenz (Lokaloszillator, LO) zur Eingangsfrequenz bzw. von der Oszillator- zur Spiegel­fre­quenz.
+
+\[ f_\mathrm{\,ZF} = \left|\, f_\mathrm{\:LO} - f_e \right| \]
+
+Professionelle Geräte verwenden teils zwei Zwischenfrequenzen, siehe \link{Doppelsuper}.
+}
